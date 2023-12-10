@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "  Yihong Zuo  "
+title                    : "  Yihong Zuo's Home Page  "
 title_separator          : "-"
 name                     : &name "Yihong Zuo"
 description              : &description "personal description"
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
