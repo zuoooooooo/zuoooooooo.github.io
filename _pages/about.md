@@ -13,4 +13,4 @@ I am very fortunate to be advised by [Prof. XXX](https://www.XXX.com/) of XXX La
 
 You can find my CV here: [Yihong Zuo's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
-Email:zuoyihong@mail.ustc.edu.cn / [Github](https://github.com/zuoooooooo) 
+[Email](mailto:zuoyihong@mail.ustc.edu.cn):zuoyihong@mail.ustc.edu.cn / [Github](https://github.com/zuoooooooo) 
