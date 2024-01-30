@@ -20,8 +20,11 @@ Overall GPA : 4.04/4.30.
 Rank: 3/50 (in statistics major)
 
 ## Relevant Coursework
-* Represents graduate courses
+\* Represents graduate courses
 
+|    左对齐   |   右对齐    |    居中    |
+|:-----------|-----------:|:----------:|
+|TaoBeier    |    TaoBeier|  TaoBeier  |
 Mathematical Analysis (92)
 Linear Algebra (93)
 Differential Equations (100)
