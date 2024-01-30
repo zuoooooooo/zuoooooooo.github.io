@@ -8,12 +8,11 @@ redirect_from:
 ---
 
 {% include base_path %}
-
+S
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+2022.9 - : Undergraduate, majoring in Statistics, School of the Gifted Young, University of Science and Technology of China.
+
 
 Work experience
 ======
