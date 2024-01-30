@@ -8,10 +8,16 @@ redirect_from:
 ---
 
 {% include base_path %}
-S
+
 Education
 ======
-2022.9 - : Undergraduate, majoring in Statistics, School of the Gifted Young, University of Science and Technology of China.
+2022.9 - : Undergraduate, majoring in statistics, [School of the Gifted Young](https://en.scgy.ustc.edu.cn/), [University of Science and Technology of China](https://en.ustc.edu.cn/)
+
+## Grades
+
+Overall GPA : 4.04/4.30.
+
+Rank: 3/50 (in statistics major)
 
 
 Work experience
