@@ -22,28 +22,10 @@ Rank: 3/50 (in statistics major)
 ## Relevant Coursework
 \* Represents graduate courses
 
-|TaoBeier    |    TaoBeier|  TaoBeier  |
-Mathematical Analysis (92)
-Linear Algebra (93)
-Differential Equations (100)
+| Mathematical Analysis (96)| Linear Algebra (96)| Probability (98)|
+|------------ | ----------- |----------|
+| Regression Analysis (95) | Data Structures(95)       |Algebraic Structure(98)|
 
-Advanced Probability* (100)
-Stochastic Process (95)
-Advanced Stochastic Process* (96)
-
-Data Structures and Databases (93)
-Real Analysis (98)
-Complex Analysis (95)
-
-Functional Analysis (93)
-Modern Algebra (95)
-Differential Geometry (93)
-
-Mathematical Statistics (97)
-Regression Analysis (95)
-Multivariate statistical analysis (98)
-
-Machine Learning (95)
 
 Awards
 ======
