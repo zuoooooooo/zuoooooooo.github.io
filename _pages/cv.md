@@ -44,7 +44,7 @@ Multivariate statistical analysis (98)
 
 Machine Learning (95)
 
-Work experience
+Awards
 ======
 * Summer 2015: Research Assistant
   * Github University
@@ -64,6 +64,8 @@ Skills
   * Sub-skill 2.2
   * Sub-skill 2.3
 * Skill 3
+
+
 
 Publications
 ======
