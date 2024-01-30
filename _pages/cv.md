@@ -20,15 +20,14 @@ Overall GPA : 4.04/4.30.
 Rank: 3/50 (in statistics major)
 
 ## Relevant Coursework
-\* Represents graduate courses
 
-| Mathematical Analysis (96)| Linear Algebra (96)| Probability (98)|
+|\* Represents graduate courses|||
 |------------ | ----------- |----------|
+| Mathematical Analysis (96)| Linear Algebra (96)| Probability (98)|
 | Regression Analysis (95) | Data Structures(95)       |Algebraic Structure(98)|
 
 
-Awards
-======
+# Awards
 * Summer 2015: Research Assistant
   * Github University
   * Duties included: Tagging issues
@@ -38,9 +37,9 @@ Awards
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
+
   
-Skills
-======
+# Skills
 * Skill 1
 * Skill 2
   * Sub-skill 2.1
