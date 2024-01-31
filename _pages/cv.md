@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Click here to download pdf version](../assets/Curriculum_Vitae.pdf)
+
 Education
 ======
 2022.9 - : Undergraduate, majoring in statistics, [School of the Gifted Young](https://en.scgy.ustc.edu.cn/), [University of Science and Technology of China](https://en.ustc.edu.cn/)
