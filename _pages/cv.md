@@ -30,15 +30,9 @@ Rank: 3/50 (in statistics major)
 
 
 # Awards
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Excellent Student Scholarship—2022~2023
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Excellent Freshman Scholarship—2022
 
   
 # Skills
