@@ -17,7 +17,7 @@ Education
 
 ## Grades
 
-Overall GPA : 4.04/4.30.
+Overall GPA: 4.04/4.30.
 
 Rank: 3/50 (in statistics major)
 
@@ -31,15 +31,13 @@ Rank: 3/50 (in statistics major)
 
 # Awards
 * Excellent Student Scholarship—2022~2023
-
+* Rose Fund Endeavor Scholarship-2022~2023
 * Excellent Freshman Scholarship—2022
 
   
 # Skills
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Languages: C/C++, Python,   R, Mathematica, Latex
+* English: CET4: 559
+  <!--    Libraries: pandas, NumPy, Matplotlib -->
+ 
 
