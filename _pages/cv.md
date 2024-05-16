@@ -22,12 +22,26 @@ Overall GPA: 4.04/4.30.
 Rank: 2/47(in statistics major)
 
 ## Relevant Coursework
+\* Represents graduate courses
 
-|\* Represents graduate courses|||
-|------------ | ----------- |----------|
-| Mathematical Analysis (96)| Linear Algebra (96)| Probability (98)|
-| Regression Analysis (95) | Data Structures(95)       |Algebraic Structure(98)|
+|Analysis and Differential Equations||
+|------------ | ----------- |
+| Mathematical Analysis (94 95 99)| Differential Equations(95)| 
+| Real Analysis(On) | Complex Analysis(On)      |
 
+|Probability and Statistics||
+|------------ | ----------- |
+| Probability (98)| Mathematical Statistics(On)| 
+| Applied Stochastic Processes(On) | Advanced Stochastic Processes*(On)    |
+|Optimization Algorithm*(On)|Regression Analysis (95)|
+
+|Algebra||
+|------------ | ----------- |
+| Linear Algebra (95 97)| Algebraic Structure(98)| 
+
+|Computer Science||
+|------------ | ----------- |
+| Data Structures(95)| computer programming(93)| 
 
 # Awards
 * Excellent Student Scholarship—2022~2023
