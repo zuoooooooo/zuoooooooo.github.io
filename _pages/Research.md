@@ -15,9 +15,10 @@ Course project
 ======
 * **Optimization Algorithm Project** （Jun. 2024）
 
-  Advisor: Prof. Jing Zeng from the Department of Statistics and Finance, USTC
-  * asd
-  * 
+  Advisor: Prof. Shixiang Chen ,The School of Mathematical Sciences, USTC
+  * Reviewed recent optimization papers and presented a report in class.
+  * Implemented sparse logistic regression using the approximate point gradient algorithm and FISTA algorithm in Python, compared their differences, and conducted theoretical analysis.
+  * Wrote a research paper documenting the methodologies and findings of the project.
  
 
 
