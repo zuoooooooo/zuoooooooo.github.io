@@ -17,7 +17,7 @@ Course project
 
   Advisor: Prof. Shixiang Chen ,The School of Mathematical Sciences, USTC
   * Reviewed recent optimization papers and presented a report in class.
-  * Implemented sparse logistic regression using the approximate point gradient algorithm and FISTA algorithm in Python, compared their differences, and conducted theoretical analysis.
+  * Implemented sparse logistic regression using the proximal gradient descent and FISTA algorithm in Python, compared their differences, and conducted theoretical analysis.
   * Wrote a research paper documenting the methodologies and findings of the project.
  
 
