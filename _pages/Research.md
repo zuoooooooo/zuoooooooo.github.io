@@ -14,6 +14,7 @@ Research experience
 Course project
 ======
 * Optimization Algorithm Project （Jun. 2024）
+
   Advisor: Prof. Jing Zeng from the Department of Statistics and Finance, USTC
   * asd
   * 
