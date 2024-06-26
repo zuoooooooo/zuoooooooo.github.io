@@ -48,7 +48,7 @@ Rank: 2/47(in statistics major)
 % * The Jiuzhang Cup - Probability and Statistics Track - Bronze 2024
 * Excellent Student Scholarship - Silver(Top 10\%)—2022~2023
 * Rose Fund Endeavor Scholarship-2022~2023
-* Excellent Freshman Scholarship - Silver(Top 3\%)—2022
+* Excellent Freshman Scholarship - Gold(Top 3\%)—2022
 
   
 # Skills
