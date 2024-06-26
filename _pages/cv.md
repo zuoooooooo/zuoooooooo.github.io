@@ -46,9 +46,9 @@ Rank: 2/47(in statistics major)
 # Awards
 * Yau Mathematics Competition - Analysis and Differential Equation - Winning Prize 2024
 % * The Jiuzhang Cup - Probability and Statistics Track - Bronze 2024
-* Excellent Student Scholarship - Silver(Top 10\%)—2022~2023
+* Excellent Student Scholarship - Silver(Top 10/%)—2022~2023
 * Rose Fund Endeavor Scholarship-2022~2023
-* Excellent Student Scholarship - Gold(Top 3\%)—2022
+* Excellent Student Scholarship - Gold(Top 3/%)—2022
 
   
 # Skills
