@@ -17,7 +17,7 @@ Education
 
 ## Grades
 
-Overall GPA: 4.04/4.30.
+Overall GPA: 4.05/4.30.
 
 Rank: 2/47(in statistics major)
 
@@ -32,7 +32,7 @@ Rank: 2/47(in statistics major)
 |Probability and Statistics||
 |------------ | ----------- |
 | Probability (98)| Mathematical Statistics(On)| 
-| Applied Stochastic Processes(On) | Advanced Stochastic Processes*(On)    |
+| Applied Stochastic Processes(100) | Advanced Stochastic Processes*(On)    |
 |Optimization Algorithm*(On)|Regression Analysis (95)|
 
 |Algebra||
@@ -41,11 +41,11 @@ Rank: 2/47(in statistics major)
 
 |Computer Science||
 |------------ | ----------- |
-| Data Structures(95)| computer programming(93)| 
+| Data Structures(95)| Computer Programming(93)| 
 
 # Awards
 * Yau Mathematics Competition - Analysis and Differential Equation - Winning Prize 2024
-* The Jiuzhang Cup - Probability and Statistics Track - Bronze 2024
+% * The Jiuzhang Cup - Probability and Statistics Track - Bronze 2024
 * Excellent Student Scholarship—2022~2023
 * Rose Fund Endeavor Scholarship-2022~2023
 * Excellent Freshman Scholarship—2022
