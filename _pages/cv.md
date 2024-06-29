@@ -22,7 +22,7 @@ Overall GPA: 4.05/4.30.
 Rank: 2/47(in statistics major)
 
 ## Relevant Coursework
-\* Represents graduate courses
+\* denotes graduate courses
 
 |Analysis and Differential Equations||
 |------------ | ----------- |
@@ -33,7 +33,7 @@ Rank: 2/47(in statistics major)
 |------------ | ----------- |
 | Probability (98)| Mathematical Statistics(90)| 
 |Regression Analysis (95) | Applied Stochastic Processes(100) | 
-|Advanced Stochastic Processes** sds **(98)  |Optimization Algorithm** * **(95)|
+|Advanced Stochastic Processes*(98)  |Optimization Algorithm*(95)|
 
 |Algebra||
 |------------ | ----------- |
