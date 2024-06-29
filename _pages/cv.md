@@ -27,13 +27,13 @@ Rank: 2/47(in statistics major)
 |Analysis and Differential Equations||
 |------------ | ----------- |
 | Mathematical Analysis (94 95 99)| Differential Equations(95)| 
-| Real Analysis(On) | Complex Analysis(On)      |
+| Real Analysis(97) | Complex Analysis(92)      |
 
 |Probability and Statistics||
 |------------ | ----------- |
-| Probability (98)| Mathematical Statistics(On)| 
-| Applied Stochastic Processes(100) | Advanced Stochastic Processes*(On)    |
-|Optimization Algorithm*(On)|Regression Analysis (95)|
+| Probability (98)| Mathematical Statistics(90)| 
+|Regression Analysis (95) | Applied Stochastic Processes(100) | 
+|Advanced Stochastic Processes*(98)  |Optimization Algorithm*(95)|
 
 |Algebra||
 |------------ | ----------- |
