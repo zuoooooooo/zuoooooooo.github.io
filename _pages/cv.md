@@ -33,7 +33,7 @@ Rank: 2/47(in statistics major)
 |------------ | ----------- |
 | Probability (98)| Mathematical Statistics(90)| 
 |Regression Analysis (95) | Applied Stochastic Processes(100) | 
-|Advanced Stochastic Processes** * **(98)  |Optimization Algorithm** * **(95)|
+|Advanced Stochastic Processes** sds **(98)  |Optimization Algorithm** * **(95)|
 
 |Algebra||
 |------------ | ----------- |
