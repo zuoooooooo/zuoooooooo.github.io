@@ -22,7 +22,7 @@ Overall GPA: 4.05/4.30.
 Rank: 2/47(in statistics major)
 
 ## Relevant Coursework
-\* denotes graduate courses, OG denotes o
+\* denotes graduate courses, OG denotes ongoing courses
 
 |Analysis and Differential Equations||
 |------------ | ----------- |
