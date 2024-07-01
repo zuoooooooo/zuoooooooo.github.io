@@ -12,7 +12,7 @@ Hi! :wave: I'm a second-year undergraduate student from [School of the Gifted Yo
 My research interests include:
 * High Dimensional Statistics 
 * Machine Learning Theory
-* Optimazition
+* Optimazition 
 
 My CV is here: [Yihong Zuo's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
