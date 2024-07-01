@@ -23,6 +23,6 @@ Course project
  
 
 
-* 
+* **Statistical Software Project**
 
 
