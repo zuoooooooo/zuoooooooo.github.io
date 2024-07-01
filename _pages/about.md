@@ -7,7 +7,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a second-year undergraduate student from [School of the Gifted Young](https://en.scgy.ustc.edu.cn/), [University of Science and Technology of China](https://en.ustc.edu.cn/), majoring in statistics. My research interests include Machine Learning, Reinforcement Learning, High Dimension Statistics, and Optimazition.
+I'm a second-year undergraduate student from [School of the Gifted Young](https://en.scgy.ustc.edu.cn/), [University of Science and Technology of China](https://en.ustc.edu.cn/), majoring in statistics.
+
+My research interests include:
+* High Dimensional Statistics 
+* Machine Learning Theory
+* Optimazition
 
 My CV is here: [Yihong Zuo's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
