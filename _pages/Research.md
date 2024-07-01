@@ -13,7 +13,7 @@ Research experience
   
 Course project
 ======
-[Github](https://github.com/zuoooooooo/Courses)
+[Github Page](https://github.com/zuoooooooo/Courses)
 * **Optimization Algorithm Project** （Jun. 2024）
 
   Advisor: Prof. Shixiang Chen ,The School of Mathematical Sciences, USTC
