@@ -17,7 +17,7 @@ Education
 
 ## Grades
 
-Overall GPA: 4.05/4.30.
+Overall GPA: 4.08/4.30.
 
 Rank: 2/47(in statistics major)
 
@@ -31,9 +31,9 @@ Rank: 2/47(in statistics major)
 
 |Probability and Statistics||
 |------------ | ----------- |
-| Probability (98)| Mathematical Statistics(90)| 
+| Probability (98)| Mathematical Statistics(Og)| 
 |Regression Analysis (95) | Applied Stochastic Processes(100) | 
-|*Advanced Stochastic Processes(98)  |*Optimization Algorithm(95)|
+|** *Advanced Stochastic Processes(98) **  |*Optimization Algorithm(95)|
 
 |Algebra||
 |------------ | ----------- |
