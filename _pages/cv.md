@@ -27,7 +27,7 @@ Rank: 2/47(in statistics major)
 |Analysis and Differential Equations||
 |------------ | ----------- |
 | Mathematical Analysis (94 95 99)| Differential Equations(95)| 
-| Real Analysis(97) | Complex Analysis(92)      |
+| Real Analysis(97) | Complex Analysis(90)      |
 
 |Probability and Statistics||
 |------------ | ----------- |
