@@ -28,7 +28,7 @@ Rank: 2/47(in statistics major)
 |------------ | ----------- |
 | Mathematical Analysis (94 95 99)| Differential Equations(95)| 
 | Real Analysis(97) | Complex Analysis(90)      |
-| Functinal Analysis(OG) |***Advanced Real Analysis(OG)** |
+| Functional Analysis(OG) |***Advanced Real Analysis(OG)** |
 
 |Probability and Statistics||
 |------------ | ----------- |
