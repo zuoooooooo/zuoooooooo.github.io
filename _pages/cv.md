@@ -28,13 +28,15 @@ Rank: 2/47(in statistics major)
 |------------ | ----------- |
 | Mathematical Analysis (94 95 99)| Differential Equations(95)| 
 | Real Analysis(97) | Complex Analysis(90)      |
+| Functinal Analysis(OG) |***Advanced Real Analysis(OG)** |
 
 |Probability and Statistics||
 |------------ | ----------- |
-| Probability (98)| Mathematical Statistics(87)| 
+| Probability Theory(98)| Mathematical Statistics(87)| 
 |Regression Analysis (95) | Applied Stochastic Processes(100) | 
 |***Advanced Stochastic Processes(98)**  |***Optimization Algorithm(95)**|
-
+|***Advanced Probability Theory(OG)**|Foundation of Statistical Algorithms(OG)|
+|Time Series Analysis(OG)||
 |Algebra||
 |------------ | ----------- |
 | Linear Algebra (95 97)| Algebraic Structure(98)| 
