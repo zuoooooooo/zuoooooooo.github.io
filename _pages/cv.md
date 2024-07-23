@@ -37,6 +37,7 @@ Rank: 2/47(in statistics major)
 |***Advanced Stochastic Processes(98)**  |***Optimization Algorithm(95)**|
 |***Advanced Probability Theory(OG)**|Foundation of Statistical Algorithms(OG)|
 |Time Series Analysis(OG)||
+
 |Algebra||
 |------------ | ----------- |
 | Linear Algebra (95 97)| Algebraic Structure(98)| 
