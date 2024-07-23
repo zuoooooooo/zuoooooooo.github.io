@@ -20,7 +20,8 @@ Education
 Overall GPA: 4.07/4.30.
 
 Rank: 2/47(in statistics major)
-
+## Teaching
+Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 ## Relevant Coursework
 \* denotes graduate courses, OG denotes ongoing courses
 
