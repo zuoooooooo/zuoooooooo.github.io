@@ -12,8 +12,8 @@ redirect_from:
 Teaching Assistant
 ======
 
- 
+- **Mathematical Analysis B3**(Fall 2024)
+  Instructor: Prof. Bin Xu from the Department of Statistics and Finance, USTC
 
 
 
-Mathematical Analysis B3
