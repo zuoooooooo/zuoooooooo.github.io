@@ -13,7 +13,7 @@ Teaching Assistant
 ======
 
 - **Mathematical Analysis B3**(Fall 2024)
-  Instructor: Prof. Bin Xu from the Department of Statistics and Finance, USTC
+  Instructor: Prof. Bin Xu from the Department of Mathematics, USTC
 
 
 
