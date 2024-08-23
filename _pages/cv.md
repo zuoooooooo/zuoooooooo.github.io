@@ -33,21 +33,22 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 | Real Analysis(97) | Complex Analysis(90)      |
 | Functional Analysis(OG) |***Advanced Real Analysis(OG)** |
 
-|Probability and Statistics||
-|------------ | ----------- |
-| Probability Theory(98)| Mathematical Statistics(87)| 
-|Regression Analysis (95) | Applied Stochastic Processes(100) | 
-|***Advanced Stochastic Processes(98)**  |***Optimization Algorithm(95)**|
-|***Advanced Probability Theory(OG)**|Foundation of Statistical Algorithms(OG)|
-|Time Series Analysis(OG)||
-
 |Algebra||
 |------------ | ----------- |
 | Linear Algebra (95 97)| Algebraic Structure(98)| 
 
-|Computer Science||
+|Probability and Statistics||
+|------------ | ----------- |
+| Probability Theory(98)| Mathematical Statistics(87)| 
+|Regression Analysis (95) | Applied Stochastic Processes(100) | 
+|***Advanced Stochastic Processes(98)**  |***Advanced Probability Theory(OG)**|
+|Time Series Analysis(OG)||
+
+
+|Computer Science and Computational Math:||
 |------------ | ----------- |
 | Data Structures(95)| Computer Programming(93)| 
+|***Optimization Algorithm(95)**|Foundation of Statistical Algorithms(OG)|
 
 # Awards
 * Yau Mathematics Competition - Analysis and Differential Equation - Winning Prize- 2024
