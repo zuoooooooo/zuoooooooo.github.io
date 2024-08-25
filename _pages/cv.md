@@ -51,7 +51,7 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 |***Optimization Algorithm(95)**|Foundation of Statistical Algorithms(OG)|
 
 # Awards
-* Yau Mathematics Competition - Analysis and Differential Equation - Winning Prize- 2024
+* Excellence Prize in Analysis & Differential Equations, the 15th S.-T. Yau College Student Mathematics Contest- 2024
 * Excellent Student Scholarship - Silver(Top 10%)—2022~2023
 * Rose Fund Endeavor Scholarship-2022~2023
 * Excellent Student Scholarship - Gold(Top 3%)—2022
