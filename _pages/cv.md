@@ -58,7 +58,7 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 
   
 # Skills
-* Languages: C/C++, Python,   R, Mathematica, Latex
+* Languages: Python(pytorch),  C/C++, R, Mathematica, Latex
 * English: CET4: 559
   <!--    Libraries: pandas, NumPy, Matplotlib -->
  
