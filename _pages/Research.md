@@ -9,7 +9,7 @@ author_profile: true
 
 Research experience
 ======
-* **mAIHT Pruner：An Monontone Accelerated Interative Hard-Thredsholding One-shot Prunning for LLM** （Jun. 2024）
+* **mAIHT Pruner：An Monontone Accelerated Interative Hard-Thredsholding One-shot Prunning for LLM** （Jun.~Sep. 2024）
 
   Advisor: Prof. Canhong Wen ,The Department of statistics and Finance, USTC
   * Performed an extensive literature review, and devised a noval mAIHT algorithm for LLM Pruning basaed on $L_0$-penalised optimization .
