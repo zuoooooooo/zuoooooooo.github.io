@@ -9,11 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-Teaching Assistant
-======
-
-- **Mathematical Analysis B3**(Fall 2024)
-  Instructor: Prof. Bin Xu from the Department of Mathematics, USTC
-
-
-
+[Statistical Inference for Counfouding Model](https://drive.google.com/file/d/1tGRhhP3KX_FpQ9V_r0VHlNJ9aX-dkb1n/view?usp=drive_link)
