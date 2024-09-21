@@ -51,11 +51,11 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 |***Optimization Algorithm(95)**|Foundation of Statistical Algorithms(OG)|
 
 # Awards
-* China National Scholarship(highest scholarship from Ministry of Education of China)-2024
+* China National Scholarship<span style="color: gray;">(highest scholarship from Ministry of Education of China)</span>-2024
 * Winning Prize in Analysis & Differential Equations, the 15th S.-T. Yau College Student Mathematics Contest- 2024
-* Excellent Student Scholarship - Silver(Top 10%)—2022~2023
+* Excellent Student Scholarship - Silver<span style="color: gray;">(Top 10%)</span>—2022~2023
 * Rose Fund Endeavor Scholarship-2022~2023
-* Excellent Student Scholarship - Gold(Top 3%)—2022
+* Excellent Student Scholarship - Gold<span style="color: gray;">(Top 3%)</span>—2022
 
   
 # Skills
