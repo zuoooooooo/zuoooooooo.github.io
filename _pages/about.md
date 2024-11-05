@@ -11,7 +11,7 @@ Hi! I'm a junior student from [School of the Gifted Young](https://en.scgy.ustc.
 
 My research interests include:
 * High Dimensional Statistics 
-* Machine Learning Theory (LLM, Diffusion model)
+* Machine Learning Theory (LLM, Diffusion models)
 * Optimization 
 
 My CV is here: [Yihong Zuo's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
