@@ -60,7 +60,7 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
   
 # Skills
 * Languages: Python(pytorch),  C/C++, R, Mathematica, Latex
-* English: CET4: 559
+* English: TOEFL: 100 (R: 27; L: 25; S: 22; W: 26)
   <!--    Libraries: pandas, NumPy, Matplotlib -->
  
 
