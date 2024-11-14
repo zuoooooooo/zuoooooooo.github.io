@@ -9,7 +9,7 @@ author_profile: true
 
 Research experience
 ======
-* **An Efficient Pruner for Large Language Model with Theoretical Guarantee ** （Jun.~Sep. 2024）
+* **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Sep. 2024）
 
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
   * Conducted an extensive literature review and developed a novel monotone accelerated iterative hard-thresholding
