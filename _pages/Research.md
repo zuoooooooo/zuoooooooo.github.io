@@ -9,14 +9,20 @@ author_profile: true
 
 Research experience
 ======
-* **mAIHT Pruner：An Monontone Accelerated Interative Hard-Thredsholding One-shot Prunning for LLM** （Jun.~Sep. 2024）
+* **An Efficient Pruner for Large Language Model with Theoretical Guarantee ** （Jun.~Sep. 2024）
 
-  Advisor: Prof. Canhong Wen ,The Department of statistics and Finance, USTC
-  * Performed an extensive literature review, and devised a noval mAIHT algorithm for LLM Pruning basaed on $L_0$-penalised optimization .
-  * Conducted a theoretical analysis of the algorithm and found that compared with existing heuristic algorithms, our algorithm has strict convergence guarantees and sublinear convergence speed.
-  * Confirmed the algorithm’s superiority over existing baseline methods through rigorous experimentation, showcasing its
-state-of-art performence in LLM Pruning.
- 
+  Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
+  * Conducted an extensive literature review and developed a novel monotone accelerated iterative hard-thresholding
+(mAIHT) algorithm for LLM pruning.
+  * Performed a theoretical analysis of the algorithm’s convergence and established its risk upper bound.
+  * Demonstrated the algorithm’s superiority over existing baseline methods through rigorous experimentation, showcasing its state-of-the-art performance.
+  * Prepared a manuscript in progress.
+
+* **High Dimensional Confounding Model** (Mar. 2024 – Jun. 2024)
+Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC 
+  Conducted a literature review on high-dimensional probability and high-dimensional statistics, learning common
+assumptions and proof techniques.
+  *Reviewed recent articles on high-dimensional confounding models and reported to peers and instructor regularly.
   
 Course project
 ======
