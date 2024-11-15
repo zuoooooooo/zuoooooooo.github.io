@@ -9,7 +9,8 @@ author_profile: true
 
 Research experiences
 ======
-* **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Sep. 2024）
+* **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Nov. 2024）
+
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
   * Conducted an extensive literature review and developed a novel monotone accelerated iterative hard-thresholding
 (mAIHT) algorithm for LLM pruning.
@@ -18,6 +19,7 @@ Research experiences
   * Prepared a manuscript in progress.
 
 * **High Dimensional Confounding Model** (Mar. 2024 – Jun. 2024)
+
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC 
   * conducted a literature review on high-dimensional probability and high-dimensional statistics, learning common assumptions and proof techniques.
   * Reviewed recent articles on high-dimensional confounding models and regularly reported to peers and instructors.
