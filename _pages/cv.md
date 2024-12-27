@@ -41,7 +41,7 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 |------------ | ----------- |
 | Probability Theory(98)| Mathematical Statistics(87)| 
 |Regression Analysis (95) | Applied Stochastic Processes(100) | 
-|***Advanced Stochastic Processes(98)**  |***Advanced Probability Theory(OG)**|
+|***Stochastic Processes(98)**  |***Advanced Probability Theory(OG)**|
 |Time Series Analysis(OG)||
 
 
