@@ -16,7 +16,7 @@ Research experiences
 (mAIHT) algorithm for LLM pruning.
   * Performed a theoretical analysis of the algorithm. Established its convergence, convergence rate and risk upper bound.
   * Demonstrated the algorithm’s superiority over existing baseline methods through rigorous experimentation, showcasing its state-of-the-art performance.
-  * Prepared a manuscript in progress.
+  * Prepared a manuscript.
 
 * **High Dimensional Confounding Model** (Mar. 2024 – Jun. 2024)
 
