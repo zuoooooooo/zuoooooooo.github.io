@@ -14,7 +14,7 @@ Research experiences
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
   * Conducted an extensive literature review and developed a novel monotone accelerated iterative hard-thresholding
 (mAIHT) algorithm for LLM pruning.
-  * Performed a theoretical analysis of the algorithm’s convergence and established its risk upper bound.
+  * Performed a theoretical analysis of the algorithm’s convergence and established its convergence and risk upper bound.
   * Demonstrated the algorithm’s superiority over existing baseline methods through rigorous experimentation, showcasing its state-of-the-art performance.
   * Prepared a manuscript in progress.
 
@@ -35,7 +35,5 @@ Course project
   * Wrote a research paper documenting the methodologies and findings of the project.
  
 
-
-* **Statistical Software Project**
 
 
