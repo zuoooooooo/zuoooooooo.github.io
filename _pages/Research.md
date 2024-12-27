@@ -22,7 +22,7 @@ Research experiences
 
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC 
   * conducted a literature review on high-dimensional probability and high-dimensional statistics, learning common assumptions and proof techniques.
-  * Reviewed recent articles on high-dimensional confounding models and regularly reported to peers and instructors.
+  * Reviewed recent articles on high-dimensional confounding models and regularly reported to instructors.
   
 Course project
 ======
