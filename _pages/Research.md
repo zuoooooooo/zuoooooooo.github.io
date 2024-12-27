@@ -12,8 +12,7 @@ Research experiences
 * **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Nov. 2024）
 
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
-  * Conducted an extensive literature review and developed a novel monotone accelerated iterative hard-thresholding
-(mAIHT) algorithm for LLM pruning.
+  * Developed a novel monotone accelerated iterative hard-thresholding (mAIHT) algorithm for LLM pruning.
   * Performed a theoretical analysis of the algorithm. Established its convergence, convergence rate and risk upper bound.
   * Demonstrated the algorithm’s superiority over existing baseline methods through rigorous experimentation, showcasing its state-of-the-art performance.
   * Prepared a manuscript.
