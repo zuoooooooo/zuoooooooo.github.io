@@ -72,8 +72,8 @@ social:
 
 
 # Analytics
-analytics:
-  provider               :   "google"# false (default),, "google-universal", "custom"，"google-universal" 
+analytics: 
+  provider               :   "google" 
   google:
     tracking_id          :  "G-82MENC2BSD"
 
