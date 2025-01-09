@@ -8,5 +8,6 @@ date: 2024-9-1
 location: "Hefei, China"
 ---
 
-Teacher:Pro. Bin Xu 
+Teacher:Prof. Bin Xu 
+
 Assignment Answers: [pdf](https://drive.google.com/file/d/1Wg4-GqymXGt_C5GXHb22CiW_u_9S95NI/view?usp=sharing)
