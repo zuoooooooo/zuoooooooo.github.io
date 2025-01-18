@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Teaching Assistant"
 permalink: /Teaching/
 author_profile: true
 redirect_from:
@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 * **Linear Algebra B1**   
-  Undergraduate course, PI: Junchao Shentu, USTC, Department of Mathematics, Spring 2024
+  Undergraduate course, PI: Junchao Shentu, USTC, Department of Mathematics, Spring 2025
 
 
 * **Mathematical Analysis B3**    
