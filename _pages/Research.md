@@ -12,7 +12,7 @@ Research experiences
 * **Personalized Generative Data Dimensionality Reduction** （Nov. 2024~Present）
 
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
-  * Conducted extensive literature review,
+  * Conducted extensive literature review on group factor model and generative models(e.g. Wasserstian Autoencoder, Wasserstein GAN), developed a novel WGAN model for personalized data dimensionality reduction.
  
 
 * **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Dec. 2024）
