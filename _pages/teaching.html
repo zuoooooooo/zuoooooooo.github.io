@@ -7,8 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-* Mathematical Analysis B3
-
- Undergraduate course, Bin Xu, USTC, Department of Mathematics, 2024
-
- Assignment Answers: pdf
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}
