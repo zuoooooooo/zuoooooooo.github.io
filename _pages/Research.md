@@ -32,7 +32,6 @@ Research experiences
   
 Course project
 ======
-[Github Page](https://github.com/zuoooooooo/Courses)
 * **Optimization Algorithm Project** （Jun. 2024）
 * **Statistical Algorithm Project** (Jan. 2025)
   * Developed a highly scalable parallel ADMM algorithm for trend filtering on graphs, Project Page: [Project Page](https://github.com/byn1002/Trend-Filtering-on-Graphs)
