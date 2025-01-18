@@ -9,15 +9,13 @@ author_profile: true
 
 Research experiences
 ======
-* **Personalized Wasserstein Generative Adversarial Network** （Jun.~Nov. 2024）
+* **Personalized Generative Data Dimensionality Reduction** （Nov. 2024~Present）
 
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
-  * Developed a novel monotone accelerated iterative hard-thresholding (mAIHT) algorithm for LLM pruning.
-  * Performed a theoretical analysis of the algorithm. Established its convergence, convergence rate and risk upper bound.
-  * Demonstrated the algorithm’s superiority over existing baseline methods through rigorous experimentation, showcasing its state-of-the-art performance.
-  * Prepared a manuscript.
+  * Conducted extensive literature review,
+ 
 
-* **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Nov. 2024）
+* **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Dec. 2024）
 
   Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC
   * Developed a novel monotone accelerated iterative hard-thresholding (mAIHT) algorithm for LLM pruning.
