@@ -9,7 +9,6 @@ redirect_from:
 
 {% include base_path %}
 * **Linear Algebra B1**
-
   Undergraduate course, PI: Junchao Shentu, USTC, Department of Mathematics, Spring 2024
 
 
