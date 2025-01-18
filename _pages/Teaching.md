@@ -8,10 +8,16 @@ redirect_from:
 ---
 
 {% include base_path %}
+* **Linear Algebra B1**
+
+  Undergraduate course, JUnchao Shentu, USTC, Department of Mathematics, Spring 2024
+
 
 * **Mathematical Analysis B3**
 
-  Undergraduate course, Bin Xu, USTC, Department of Mathematics, 2024
+  Undergraduate course, Bin Xu, USTC, Department of Mathematics, Fall 2024
 
   Assignment Answers: [pdf](https://drive.google.com/file/d/1Wg4-GqymXGt_C5GXHb22CiW_u_9S95NI/view?usp=sharing)
+
+  
 
