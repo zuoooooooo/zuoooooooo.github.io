@@ -9,12 +9,12 @@ author_profile: true
 
 Research experiences
 ======
-* **A Highly Scalable Parallel Algorithm for Trend Filtering on Graphs** (Nov. 2024 ~Present)   
-Collaborated with Yinan Bu, Dongrun Wu    
-  * Graph trend filtering is a powerful nonparametric method that extracts piecewise smooth graph signals by minimizing the ℓ₁ norm of discrete graph differences. Traditional ADMM algorithms often struggle with the trade-off between convergence speed and the tractability of subproblems, leading to computational inefficiencies.
-  * We propose Doge-ADMM, a novel Differential Operator Grouping-based ADMM algorithm that enables scalable parallel computation while maintaining closed-form solutions for subproblems.
-  * Experiments on 2D grid graphs show that Doge-ADMM achieves up to 30× acceleration over state-of-the-art methods in second-order trend filtering, making it highly effective for large-scale graph-based problems.
-  * [Github Page](https://github.com/byn1002/Doge-ADMM) [pdf]()
+* **A Highly Scalable Parallel Algorithm for Trend Filtering on Graphs** (Nov. 2024 ~Present)    
+Collaborated with Yinan Bu, Dongrun Wu     
+  * Graph trend filtering is a nonparametric method that extracts piecewise smooth signals by minimizing the ℓ₁ norm of discrete graph differences. Traditional ADMM algorithms face inefficiencies due to the trade-off between convergence speed and subproblem tractability.
+  * We introduce Doge-ADMM, a novel algorithm based on Differential Operator Grouping, which enables scalable parallel computation and closed-form subproblem solutions.
+  * Experiments on 2D grid graphs demonstrate that Doge-ADMM achieves up to 30× speedup over existing methods in second-order trend filtering, making it highly effective for large-scale graph problems.
+  * [Github Page](https://github.com/byn1002/Doge-ADMM) [pdf](https://github.com/byn1002/Doge-ADMM/blob/main/Doge_ADMM.pdf)
 
 
 
