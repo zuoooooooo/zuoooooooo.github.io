@@ -17,7 +17,7 @@ Education
 
 ## Grades
 
-Overall GPA: 4.07/4.30.
+Overall GPA: 4.08/4.30.
 
 Rank: 1/46(in statistics major)
 
@@ -31,7 +31,7 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 |------------ | ----------- |
 | Mathematical Analysis (94 95 99)| Differential Equations(95)| 
 | Real Analysis(97) | Complex Analysis(90)      |
-| Functional Analysis(OG) |***Advanced Real Analysis(OG)** |
+| Functional Analysis(96) ||
 
 |Algebra||
 |------------ | ----------- |
@@ -41,14 +41,15 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 |------------ | ----------- |
 | Probability Theory(98)| Mathematical Statistics(87)| 
 |Regression Analysis (95) | Applied Stochastic Processes(100) | 
-|***Stochastic Processes(98)**  |***Advanced Probability Theory(OG)**|
-|Time Series Analysis(OG)||
+|***Stochastic Processes(98)**  |***Advanced Probability Theory(100)**|
+|Time Series Analysis(90)|Multivariate statistical analysis(OG)|
 
 
 |Computer Science and Computational Math:||
 |------------ | ----------- |
 | Data Structures(95)| Computer Programming(93)| 
-|***Optimization Algorithm(95)**|Foundation of Statistical Algorithms(OG)|
+|***Optimization Algorithm(95)**|Foundation of Statistical Algorithms(94)|
+|Statisticle Sotewares(OG)||
 
 # Awards
 * **China National Scholarship**<span style="color: #D8D8D8 ;">(highest scholarship from Ministry of Education of China)</span>-2024
