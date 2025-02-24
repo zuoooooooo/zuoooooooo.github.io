@@ -21,10 +21,21 @@ Overall GPA: 4.08/4.30.
 
 Rank: 1/46(in statistics major)
 
-## Teaching Asistant
-Mathematical Analysis B3       Sep. 2024 - Jan. 2025
+# Skills
+* Languages: Python(pytorch),  C, R, Mathematica, Latex
+* English: TOEFL: 100 (R: 27; L: 25; S: 22; W: 26)
 
-## Relevant Coursework
+# Awards
+* **China National Scholarship**<span style="color: #D8D8D8 ;">(highest scholarship from Ministry of Education of China)</span>-2024
+* **Winning Prize** in Analysis & Differential Equations, **the 15th S.-T. Yau College Student Mathematics Contest**- 2024
+* **Excellent Student Scholarship - Silver**<span style="color: #D8D8D8 ;">(Top 10%)</span>—2022~2023
+* **Rose Fund Endeavor** **Scholarship**-2022~2023
+* **Excellent Student Scholarship - Gold**<span style="color: #D8D8D8 ;">(Top 3%)</span>—2022
+
+  
+
+
+# Relevant Coursework
 \* denotes graduate courses, OG denotes ongoing courses
 
 |Analysis and Differential Equations||
@@ -51,17 +62,6 @@ Mathematical Analysis B3       Sep. 2024 - Jan. 2025
 |***Optimization Algorithm(95)**|Foundation of Statistical Algorithms(94)|
 |Statisticle Sotewares(OG)||
 
-# Awards
-* **China National Scholarship**<span style="color: #D8D8D8 ;">(highest scholarship from Ministry of Education of China)</span>-2024
-* **Winning Prize** in Analysis & Differential Equations, **the 15th S.-T. Yau College Student Mathematics Contest**- 2024
-* **Excellent Student Scholarship - Silver**<span style="color: #D8D8D8 ;">(Top 10%)</span>—2022~2023
-* **Rose Fund Endeavor** **Scholarship**-2022~2023
-* **Excellent Student Scholarship - Gold**<span style="color: #D8D8D8 ;">(Top 3%)</span>—2022
-
-  
-# Skills
-* Languages: Python(pytorch),  C, R, Mathematica, Latex
-* English: TOEFL: 100 (R: 27; L: 25; S: 22; W: 26)
   <!--    Libraries: pandas, NumPy, Matplotlib -->
  
 
