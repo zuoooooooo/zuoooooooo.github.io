@@ -7,30 +7,17 @@ author_profile: true
 
 {% include base_path %}
 
-Research experiences
+Research 
 ======
 
-* **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （Jun.~Dec. 2024）    
-  Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC   
-  * Developed a novel monotone accelerated iterative hard-thresholding (mAIHT) algorithm for LLM pruning.
-  * Performed a theoretical analysis of the algorithm. Established its convergence, convergence rate and risk upper bound.
-  * Demonstrated the algorithm’s superiority over existing baseline methods through rigorous experimentation, showcasing its state-of-the-art performance.
-  * Prepared a manuscript.
+---------------
 
-* **High Dimensional Confounding Model** (Mar. 2024 – Jun. 2024)    
-  Advisor: Prof. Canhong Wen, The Department of Statistics and Finance, USTC 
-  * Conducted a literature review on high-dimensional probability and high-dimensional statistics, learning common assumptions and proof techniques.
-  * Reviewed recent articles on high-dimensional confounding models and regularly reported to instructors.
+* **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （with Canhong Wen and Wenliang Pan）    
+Abstract: Large Language Models (LLMs) have showcased remarkable performance across a range of tasks but are hindered by their massive parameter sizes, which impose significant computational and storage demands. Pruning has emerged as an effective solution to reduce model size, but traditional methods often involve inefficient retraining or rely on heuristic-based one-shot approaches that lack theoretical guarantees. In this paper, we reformulate the pruning problem as an $\ell_0$-penalized optimization problem and propose a monotone accelerated Iterative Hard Thresholding (mAIHT) method. Our approach combines solid theoretical foundations with practical effectiveness, offering a detailed theoretical analysis that covers convergence, convergence rates, and risk upper bounds. Through extensive experiments, we demonstrate that mAIHT outperforms state-of-the-art pruning techniques by effectively pruning the LLaMA-7B model across various evaluation metrics.
 
+---------------
   
-* **A Highly Scalable Parallel Algorithm for Trend Filtering on Graphs** (Nov. 2024 ~Present)    
-Collaborated with Yinan Bu, Dongrun Wu     
-  * Graph trend filtering is a nonparametric method that extracts piecewise smooth signals by minimizing the ℓ₁ norm of discrete graph differences. Traditional ADMM algorithms face inefficiencies due to the trade-off between convergence speed and subproblem tractability.
-  * We introduce Doge-ADMM, a novel algorithm based on Differential Operator Grouping, which enables scalable parallel computation and closed-form subproblem solutions.
-  * Experiments on 2D grid graphs demonstrate that Doge-ADMM achieves up to 30× speedup over existing methods in second-order trend filtering, making it highly effective for large-scale graph problems.
-  * [Github Page](https://github.com/byn1002/Doge-ADMM) / [pdf](https://github.com/byn1002/Doge-ADMM/blob/main/Doge_ADMM.pdf)
-
-
+* [**A Highly Scalable Parallel Algorithm for Trend Filtering on Graphs**](https://github.com/byn1002/Doge-ADMM)  (with Yinan Bu, Dongrun Wu)
 
  
 
