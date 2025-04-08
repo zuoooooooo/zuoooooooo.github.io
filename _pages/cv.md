@@ -17,9 +17,9 @@ Education
 
 ## Grades
 
-Overall GPA: 4.08/4.30.
+Overall GPA: 4.07/4.30.
 
-Rank: 1/46(in statistics major)
+Rank: 2/47(in statistics major)
 
 # Skills
 * Languages: Python(pytorch),  C, R, Mathematica, Latex
