@@ -42,7 +42,7 @@ Rank: 2/47(in statistics major)
 |------------ | ----------- |
 | Mathematical Analysis (94 95 99)| Differential Equations(95)| 
 | Real Analysis(97) | Complex Analysis(90)      |
-| Functional Analysis(96) ||
+| Functional Analysis(96) |   |
 
 |Algebra||
 |------------ | ----------- |
@@ -52,15 +52,17 @@ Rank: 2/47(in statistics major)
 |------------ | ----------- |
 | Probability Theory(98)| Mathematical Statistics(87)| 
 |Regression Analysis (95) | Applied Stochastic Processes(100) | 
-|***Stochastic Processes(98)**  |***Advanced Probability Theory(100)**|
 |Time Series Analysis(90)|Multivariate statistical analysis(OG)|
+|Foundation of Statistical Algorithms(94)|***Optimization Algorithm(95)**|
+|***Stochastic Processes(98)**  |***Advanced Probability Theory(100)**|
+
 
 
 |Computer Science and Computational Math:||
 |------------ | ----------- |
-| Data Structures(95)| Computer Programming(93)| 
-|***Optimization Algorithm(95)**|Foundation of Statistical Algorithms(94)|
-|Statisticle Sotewares(OG)||
+|Data Structures(95)| Computer Programming(93)| 
+|Statistical Softewares(OG)||
+
 
   <!--    Libraries: pandas, NumPy, Matplotlib -->
  
