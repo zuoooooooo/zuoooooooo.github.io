@@ -35,6 +35,7 @@ Rank: 2/47(in statistics major)
   
 
 
+<!-- 这是一段被注释掉的文字
 # Relevant Coursework
 \* denotes graduate courses, OG denotes ongoing courses
 
@@ -61,9 +62,9 @@ Rank: 2/47(in statistics major)
 |Computer Science and Computational Math:||
 |------------ | ----------- |
 |Data Structures(95)| Computer Programming(93)| 
-|Statistical Softewares(OG)||
-
-
+|Statistical Softewares(OG)||?
+ -->
+ 
   <!--    Libraries: pandas, NumPy, Matplotlib -->
  
 
