@@ -17,4 +17,7 @@ Hi!👋 I'm a junior student at [School of the Gifted Young](https://en.scgy.ust
 
 My CV is here: [Yihong Zuo's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
+We are organizing a Deep Learning Seminar, focusing on discussions around large language models, deep neural networks, and generative models.  
+For more information, please visit: [https://zuoooooooo.github.io/dlseminar.html](https://zuoooooooo.github.io/dlseminar.html)
+
 [Email](mailto:zuoyihong@mail.ustc.edu.cn):zuoyihong@mail.ustc.edu.cn / [Github](https://github.com/zuoooooooo) 
