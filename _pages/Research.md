@@ -7,6 +7,9 @@ author_profile: true
 
 {% include base_path %}
 
+----------------
+
+We are organizing a **Deep Learning Seminar**, focusing on discussions around deep neural networks, large language models,  and generative models. For more information, please visit: [https://zuoooooooo.github.io/dlseminar.html](https://zuoooooooo.github.io/dlseminar.html)
 
 ---------------
 
