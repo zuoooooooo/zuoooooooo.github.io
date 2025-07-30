@@ -17,7 +17,7 @@ Education
 
 ## Grades
 
-Overall GPA: 4.07/4.30.
+Overall GPA: 4.08/4.30.
 
 Rank: 2/47(in statistics major)
 
