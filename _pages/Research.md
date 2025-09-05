@@ -22,11 +22,3 @@ Abstract: Large Language Models (LLMs) have showcased remarkable performance acr
 
 ---------------
   
-**A Highly Scalable Parallel Algorithm for Trend Filtering on Graphs**  (with Yinan Bu, Dongrun Wu)   
-[[github](https://github.com/byn1002/Doge-ADMM)]
-
-Abstract: Graph trend filtering is a powerful nonparametric method based on minimizing the $\ell_1$ norm of discrete graph differences for analyzing data with arbitrary graph structures, aiming to extract piecewise smooth graph signals. However, traditional ADMM algorithms face challenges in balancing the trade-off between convergence rate and the tractability of subproblems, often resulting in computational inefficiency. In this paper, We propose a novel Differential Operator Grouping-based ADMM algorithm (Doge-ADMM), which leverages differential operator grouping techniques to achieve scalable parallel computation with closed-form solutions for sub-problems while maintaining a fast convergence rate. Experiments on 2-D grid graphs demonstrate that Doge-ADMM achieves up to 30x acceleration over state-of-the-art methods in second-order trend filtering, making it highly suitable for large-scale problems.
- 
-
-
-
