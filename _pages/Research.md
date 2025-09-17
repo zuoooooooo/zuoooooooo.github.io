@@ -12,14 +12,13 @@ author_profile: true
 We are organizing a **Deep Learning Seminar**, focusing on discussions around deep neural networks, large language models,  and generative models. For more information, please visit: [https://zuoooooooo.github.io/dlseminar.html](https://zuoooooooo.github.io/dlseminar.html)
 
 
-
+<!-- 这是一段被注释掉的文字
 ---------------
 **How well can we classify? Navigating Weak Signals.** （with Zhouyu Shen and Dacheng Xiu）           
 <span style="color:grey">Work in progress .</span> 
 
 Abstract: In high-dimensional logistic regressions with weak signals, we investigate the predictive performance of maximum likelihood estimators with shrinkage. Our theory shows that both Ridge- and Lasso-regularized MLEs improve upon a zero benchmark, yet Lasso consistently underperforms Ridge. Strikingly, we uncover a failure of tuning in Ridge: predictive gains are invariant to the choice of penalty parameter. This breakdown highlights a fundamental contrast between weak and strong signals, suggesting that the challenge of prediction in weak-signal settings lies not in tuning but in the intrinsic limits of information extraction. These findings deepen our understanding of the difficulties posed by weak signals in economic and social data.
-
-
+-->
 
 ---------------
 
