@@ -11,6 +11,14 @@ author_profile: true
 
 We are organizing a **Deep Learning Seminar**, focusing on discussions around deep neural networks, large language models,  and generative models. For more information, please visit: [https://zuoooooooo.github.io/dlseminar.html](https://zuoooooooo.github.io/dlseminar.html)
 
+
+<!-- 这是一段被注释掉的文字
+---------------
+
+--------
+ -->
+
+
 ---------------
 
 **An Efficient Pruner for Large Language Model with Theoretical Guarantee** （with Canhong Wen and Wenliang Pan）           
