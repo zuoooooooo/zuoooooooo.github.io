@@ -11,6 +11,8 @@ redirect_from:
 
 * **Linear Algebra B1**   
   Undergraduate course, PI: Junchao Shentu, USTC, Department of Mathematics, Spring 2025
+  Assignment Answers: [pdf]([https://drive.google.com/file/d/1Wg4-GqymXGt_C5GXHb22CiW_u_9S95NI/view?usp=sharing](https://drive.google.com/file/d/15qaZ2LO9q3pcne5UpCZCqhtsguRtsIIs/view?usp=sharing))
+
 
 
 * **Mathematical Analysis B3**    
