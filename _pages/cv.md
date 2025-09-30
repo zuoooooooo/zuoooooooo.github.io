@@ -28,10 +28,8 @@ Rank: 2/116 in the School of Management
 # Awards
 * **China National Scholarship**<span style="color: #D8D8D8 ;">(highest scholarship from Ministry of Education of China)</span>-2024, 2025
 * **Winning Prize** in Analysis & Differential Equations, **the 15th S.-T. Yau College Student Mathematics Contest**- 2024
-* **Excellent Student Scholarship - Silver**<span style="color: #D8D8D8 ;">(Top 10%)</span>— 2023
+* **Excellent Student Scholarship**— 2022, 2023
 * **Rose Fund Endeavor** **Scholarship**- 2023
-* **Excellent Student Scholarship - Gold**<span style="color: #D8D8D8 ;">(Top 3%)</span>—2022
-
   
 
 
