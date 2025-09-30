@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi!👋 I'm a senior student at [School of the Gifted Young](https://en.scgy.ustc.edu.cn/), [University of Science and Technology of China](https://en.ustc.edu.cn/), majoring in statistics. I am broadly interested in advancing statistical methodology and theory. My goal is to develop new powerful methods to address significant scientific and societal challenges. With this aim, my research interests include:
+Hi!👋 I'm a senior student at [School of the Gifted Young](https://en.scgy.ustc.edu.cn/), [University of Science and Technology of China](https://en.ustc.edu.cn/), majoring in statistics. I am broadly interested in advancing statistical methodology and theory. My goal is to develop new, powerful methods to address significant scientific and societal challenges. With this aim, my research interests include:
 
 * Machine Learning
 * High-Dimensional Statistics 
