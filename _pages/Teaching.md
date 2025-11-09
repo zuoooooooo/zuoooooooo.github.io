@@ -22,4 +22,4 @@ redirect_from:
   
 # Resourses
 
-* optimizatiom algorithms notes: [pdf](https://drive.google.com/file/d/1jtoXnAF3h3fsnivFV4O36WRF07J86Kbx/view?usp=sharing)
+* Optimizatiom algorithms notes: [pdf](https://drive.google.com/file/d/1jtoXnAF3h3fsnivFV4O36WRF07J86Kbx/view?usp=sharing)
