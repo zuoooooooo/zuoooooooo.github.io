@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Teaching Assistant"
+title: "Teaching"
 permalink: /Teaching/
 author_profile: true
 redirect_from:
@@ -20,4 +20,6 @@ redirect_from:
   Assignment Answers: [pdf](https://drive.google.com/file/d/1Wg4-GqymXGt_C5GXHb22CiW_u_9S95NI/view?usp=sharing)
 
   
+# Resourses
 
+* optimizatiom algorithms notes: [pdf](https://drive.google.com/file/d/1jtoXnAF3h3fsnivFV4O36WRF07J86Kbx/view?usp=sharing))
