@@ -14,5 +14,3 @@ During my undergraduate studies, I had the great pleasure of working with Prof. 
 If you are interested in my research or would like to discuss some interesting topics with me, please feel free to contact me!
 
 [Email](mailto:zuoyihong@mail.ustc.edu.cn):zuoyihong@mail.ustc.edu.cn / [Github](https://github.com/zuoooooooo)
-
-openclaw
