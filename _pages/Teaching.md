@@ -20,9 +20,9 @@ redirect_from:
   Assignment Answers: [pdf](https://drive.google.com/file/d/1Wg4-GqymXGt_C5GXHb22CiW_u_9S95NI/view?usp=sharing)
 
   
-# Resourses
+# Resources
 
-* Optimizatiom algorithms notes: [pdf](https://drive.google.com/file/d/1jtoXnAF3h3fsnivFV4O36WRF07J86Kbx/view?usp=sharing)
+* Optimization algorithms notes: [pdf](https://drive.google.com/file/d/1jtoXnAF3h3fsnivFV4O36WRF07J86Kbx/view?usp=sharing)
 * Deep Learning Seminar, focusing on discussions around deep neural networks, large language models,  and generative models. For more information, please visit: [https://zuoooooooo.github.io/dlseminar.html](https://zuoooooooo.github.io/dlseminar.html)
 
 
