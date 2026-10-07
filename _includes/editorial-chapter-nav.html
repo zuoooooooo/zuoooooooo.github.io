@@ -1,0 +1,4 @@
+<nav class="chapter-nav" aria-label="Section navigation">
+  {% if include.previous %}<a class="chapter-link chapter-previous" href="#{{ include.previous }}"><span class="chapter-arrow" aria-hidden="true">←</span><span><small>Previous section</small>{{ include.previous_title }}</span></a>{% else %}<span></span>{% endif %}
+  {% if include.next %}<a class="chapter-link chapter-next" href="#{{ include.next }}"><span><small>Next section</small>{{ include.next_title }}</span><span class="chapter-arrow" aria-hidden="true">→</span></a>{% endif %}
+</nav>

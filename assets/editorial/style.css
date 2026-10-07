@@ -360,3 +360,25 @@ body.gallery-open{overflow:hidden}
 .photo-entry figcaption{gap:12px;font-size:10px}
 @media(max-width:800px){.photo-gallery{columns:2;column-gap:20px}}
 @media(max-width:620px){.photo-gallery{columns:1}.photo-series-heading{align-items:flex-start;flex-direction:column;gap:10px;padding-block:22px}.photo-series-heading h3{font-size:26px}.photo-entry figcaption{font-size:11px}}
+
+/* Magazine chapter navigation and a directional paper-turn transition. */
+.chapter-nav{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
+.chapter-link{display:flex;align-items:center;gap:16px;font-family:var(--serif);font-size:20px;line-height:1.4}
+.chapter-link small{display:block;font-family:var(--label);font-size:9px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.chapter-arrow{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-family:var(--sans);font-size:20px;flex-shrink:0;transition:background .2s,color .2s,transform .2s}
+.chapter-link:hover .chapter-arrow{background:var(--blue);border-color:var(--blue);color:var(--paper)}
+.chapter-previous:hover .chapter-arrow{transform:translateX(-3px)}
+.chapter-next:hover .chapter-arrow{transform:translateX(3px)}
+.chapter-next{text-align:right;margin-left:auto}
+.transition-arrival .reveal{opacity:1;transform:none;transition:none}
+.page-section h2:focus-visible{outline:1px solid var(--blue);outline-offset:8px}
+@media(max-width:620px){.chapter-nav{gap:18px;margin-top:30px;padding-top:20px}.chapter-link{font-size:17px;gap:10px}.chapter-link small{font-size:8px;letter-spacing:.7px}.chapter-arrow{width:34px;height:34px;font-size:17px}}
+
+.page-turn-overlay{position:fixed;inset:0;z-index:9;pointer-events:none;overflow:hidden}
+.page-turn-sheet{position:absolute;inset:0;overflow:hidden;background:var(--paper);backface-visibility:hidden;box-shadow:28px 0 55px #24262124;will-change:transform,opacity}
+.page-turn-content{position:absolute;top:0;left:0;width:100%;margin:0;pointer-events:none}
+
+.about-section{row-gap:0}
+@media(max-width:620px){.about-section{row-gap:16px}}
+
+html[data-page-turn]{scroll-behavior:auto!important}

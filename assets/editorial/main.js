@@ -19,6 +19,89 @@
       toggle.focus();
     }
   });
+  // Turn an inert copy of the current view above the destination section.
+  // Reduced motion keeps ordinary anchor navigation.
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let activeTransition = null;
+  let navigationVersion = 0;
+  document.addEventListener('click', async (event) => {
+    const link = event.target.closest('a[href]');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey ||
+        event.ctrlKey || event.shiftKey || event.altKey || link.hasAttribute('download') ||
+        (link.target && link.target !== '_self')) return;
+    const url = new URL(link.href, location.href);
+    if (url.origin !== location.origin || url.pathname !== location.pathname ||
+        url.search !== location.search || !url.hash || reducedMotion.matches) return;
+    const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+    if (!target?.classList.contains('page-section')) return;
+    event.preventDefault();
+    closeMenu();
+    const version = ++navigationVersion;
+    if (activeTransition) {
+      activeTransition.skipTransition();
+      await activeTransition.finished.catch(() => {});
+      if (version !== navigationVersion) return;
+    }
+    const root = document.documentElement;
+    const offset = parseFloat(getComputedStyle(root).scrollPaddingTop) || 0;
+    const destination = Math.max(0, target.getBoundingClientRect().top + scrollY - offset);
+    const heading = target.querySelector('h2');
+    const update = () => {
+      target.classList.add('transition-arrival');
+      target.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+      if (location.hash !== url.hash) history.pushState(null, '', url.hash);
+      window.scrollTo({ top: destination, behavior: 'auto' });
+    };
+    if (Math.abs(destination - scrollY) < 12) {
+      if (location.hash !== url.hash) history.pushState(null, '', url.hash);
+      heading?.focus({ preventScroll: true });
+      return;
+    }
+    root.dataset.pageTurn = destination > scrollY ? 'forward' : 'backward';
+    let overlay = null;
+    try {
+      const main = document.querySelector('main');
+      overlay = document.createElement('div');
+      overlay.className = 'page-turn-overlay';
+      overlay.setAttribute('aria-hidden', 'true');
+      overlay.inert = true;
+      const sheet = document.createElement('div');
+      sheet.className = 'page-turn-sheet';
+      const copy = main.cloneNode(true);
+      copy.className = 'page-turn-content';
+      copy.removeAttribute('id');
+      copy.querySelectorAll('[id]').forEach((element) => element.removeAttribute('id'));
+      copy.querySelectorAll('dialog').forEach((element) => element.remove());
+      copy.style.transform = `translateY(${main.getBoundingClientRect().top}px)`;
+      sheet.append(copy);
+      overlay.append(sheet);
+      document.body.append(overlay);
+      const forward = root.dataset.pageTurn === 'forward';
+      sheet.style.transformOrigin = forward ? 'left center' : 'right center';
+      update();
+      const animation = sheet.animate([
+        { transform: 'perspective(1800px) rotateY(0deg)', opacity: 1, filter: 'brightness(1)' },
+        { opacity: 1, offset: 0.7 },
+        { transform: `perspective(1800px) rotateY(${forward ? -105 : 105}deg)`, opacity: 0, filter: 'brightness(.85)' }
+      ], { duration: 780, easing: 'cubic-bezier(.3,.05,.2,1)', fill: 'both' });
+      activeTransition = {
+        skipTransition: () => animation.cancel(),
+        finished: animation.finished.catch(() => {}).finally(() => overlay.remove())
+      };
+      await activeTransition.finished;
+    } catch {
+      update();
+    } finally {
+      overlay?.remove();
+      target.classList.remove('transition-arrival');
+      if (version === navigationVersion) {
+        activeTransition = null;
+        heading?.focus({ preventScroll: true });
+        window.scrollTo({ top: destination, behavior: 'auto' });
+        delete root.dataset.pageTurn;
+      }
+    }
+  });
   const sectionLinks = Array.from(document.querySelectorAll('.site-nav a[href*="#"]'));
   if ('IntersectionObserver' in window) {
     const sectionObserver = new IntersectionObserver((entries) => {
