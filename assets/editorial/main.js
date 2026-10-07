@@ -19,11 +19,31 @@
       toggle.focus();
     }
   });
-  // Turn an inert copy of the current view above the destination section.
-  // Reduced motion keeps ordinary anchor navigation.
+  // A short crossfade connects chapters; masked titles lead the arrival.
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let activeTransition = null;
+  const root = document.documentElement;
+  const main = document.querySelector('main');
+  const navigationAnimations = new Set();
   let navigationVersion = 0;
+  const cancelNavigation = () => {
+    navigationVersion++;
+    navigationAnimations.forEach((animation) => animation.cancel());
+    navigationAnimations.clear();
+    delete root.dataset.sectionTransition;
+  };
+  const playNavigation = (element, frames, options) => {
+    const animation = element.animate(frames, options);
+    navigationAnimations.add(animation);
+    animation.finished.catch(() => {});
+    return animation;
+  };
+  // Visitors can interrupt a transition and continue scrolling immediately.
+  window.addEventListener('wheel', cancelNavigation, { passive: true });
+  window.addEventListener('touchstart', cancelNavigation, { passive: true });
+  window.addEventListener('popstate', cancelNavigation);
+  document.addEventListener('keydown', (event) => {
+    if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes(event.key)) cancelNavigation();
+  });
   document.addEventListener('click', async (event) => {
     const link = event.target.closest('a[href]');
     if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey ||
@@ -31,82 +51,70 @@
         (link.target && link.target !== '_self')) return;
     const url = new URL(link.href, location.href);
     if (url.origin !== location.origin || url.pathname !== location.pathname ||
-        url.search !== location.search || !url.hash || reducedMotion.matches) return;
-    const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
-    if (target?.classList.contains('photo-series')) {
-      event.preventDefault();
-      if (location.hash !== url.hash) history.pushState(null, '', url.hash);
-      const offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
-      window.scrollTo({ top: Math.max(0, target.getBoundingClientRect().top + scrollY - offset), behavior: 'smooth' });
-      target.querySelector('h3')?.focus({ preventScroll: true });
-      return;
-    }
-    if (!target?.classList.contains('page-section')) return;
+        url.search !== location.search || !url.hash) return;
+    let target;
+    try { target = document.getElementById(decodeURIComponent(url.hash.slice(1))); }
+    catch { return; }
+    if (!target?.matches('.page-section, .photo-series')) return;
     event.preventDefault();
+    cancelNavigation();
     closeMenu();
-    const version = ++navigationVersion;
-    if (activeTransition) {
-      activeTransition.skipTransition();
-      await activeTransition.finished.catch(() => {});
-      if (version !== navigationVersion) return;
-    }
-    const root = document.documentElement;
+    const version = navigationVersion;
+    const heading = target.querySelector('h2, h3');
     const offset = parseFloat(getComputedStyle(root).scrollPaddingTop) || 0;
     const destination = Math.max(0, target.getBoundingClientRect().top + scrollY - offset);
-    const heading = target.querySelector('h2');
     const update = () => {
-      target.classList.add('transition-arrival');
       target.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
       if (location.hash !== url.hash) history.pushState(null, '', url.hash);
-      window.scrollTo({ top: destination, behavior: 'auto' });
+      window.scrollTo({ top: destination, behavior: 'instant' });
     };
-    if (Math.abs(destination - scrollY) < 12) {
+    if (target.classList.contains('photo-series') && !reducedMotion.matches) {
       if (location.hash !== url.hash) history.pushState(null, '', url.hash);
+      window.scrollTo({ top: destination, behavior: 'smooth' });
       heading?.focus({ preventScroll: true });
       return;
     }
-    root.dataset.pageTurn = destination > scrollY ? 'forward' : 'backward';
-    let overlay = null;
+    if (reducedMotion.matches || !main?.animate || Math.abs(destination - scrollY) < 12) {
+      update();
+      heading?.focus({ preventScroll: true });
+      return;
+    }
     try {
-      const main = document.querySelector('main');
-      overlay = document.createElement('div');
-      overlay.className = 'page-turn-overlay';
-      overlay.setAttribute('aria-hidden', 'true');
-      overlay.inert = true;
-      const sheet = document.createElement('div');
-      sheet.className = 'page-turn-sheet';
-      const copy = main.cloneNode(true);
-      copy.className = 'page-turn-content';
-      copy.removeAttribute('id');
-      copy.querySelectorAll('[id]').forEach((element) => element.removeAttribute('id'));
-      copy.querySelectorAll('dialog').forEach((element) => element.remove());
-      copy.style.transform = `translateY(${main.getBoundingClientRect().top}px)`;
-      sheet.append(copy);
-      overlay.append(sheet);
-      document.body.append(overlay);
-      const forward = root.dataset.pageTurn === 'forward';
-      sheet.style.transformOrigin = forward ? 'left center' : 'right center';
+      root.dataset.sectionTransition = 'leaving';
+      const outgoing = playNavigation(main, [{ opacity: 1 }, { opacity: 0 }], {
+        duration: 140, easing: 'ease-in', fill: 'forwards'
+      });
+      await outgoing.finished.catch(() => {});
+      if (version !== navigationVersion) return;
       update();
-      const animation = sheet.animate([
-        { transform: 'perspective(1800px) rotateY(0deg)', opacity: 1, filter: 'brightness(1)' },
-        { opacity: 1, offset: 0.7 },
-        { transform: `perspective(1800px) rotateY(${forward ? -105 : 105}deg)`, opacity: 0, filter: 'brightness(.85)' }
-      ], { duration: 780, easing: 'cubic-bezier(.3,.05,.2,1)', fill: 'both' });
-      activeTransition = {
-        skipTransition: () => animation.cancel(),
-        finished: animation.finished.catch(() => {}).finally(() => overlay.remove())
-      };
-      await activeTransition.finished;
+      root.dataset.sectionTransition = 'entering';
+      const incoming = playNavigation(main, [{ opacity: 0 }, { opacity: 1 }], {
+        duration: 220, easing: 'ease-out', fill: 'both'
+      });
+      outgoing.cancel();
+      const arrivals = [incoming];
+      if (heading) arrivals.push(playNavigation(heading, [
+        { opacity: 0, transform: 'translateY(18px)', clipPath: 'inset(0 0 100% 0)' },
+        { opacity: 1, transform: 'translateY(0)', clipPath: 'inset(0 0 0 0)' }
+      ], { duration: 520, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'both' }));
+      const details = Array.from(target.querySelectorAll('.prose > p, .research-item, .teaching-materials > div, .photo-series-index, .photo-series-heading, .contact-email, .contact-section > p'))
+        .filter((element) => {
+          const bounds = element.getBoundingClientRect();
+          return bounds.top < innerHeight && bounds.bottom > offset;
+        }).slice(0, 5);
+      details.forEach((element, index) => arrivals.push(playNavigation(element, [
+        { opacity: 0, transform: 'translateY(14px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 420, delay: 60 + index * 45, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'both' })));
+      await Promise.all(arrivals.map((animation) => animation.finished.catch(() => {})));
     } catch {
-      update();
+      if (version === navigationVersion) update();
     } finally {
-      overlay?.remove();
-      target.classList.remove('transition-arrival');
       if (version === navigationVersion) {
-        activeTransition = null;
+        navigationAnimations.forEach((animation) => animation.cancel());
+        navigationAnimations.clear();
+        delete root.dataset.sectionTransition;
         heading?.focus({ preventScroll: true });
-        window.scrollTo({ top: destination, behavior: 'auto' });
-        delete root.dataset.pageTurn;
       }
     }
   });
