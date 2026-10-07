@@ -351,6 +351,7 @@ body.gallery-open{overflow:hidden}
 @media(max-width:620px){.page-section{padding:48px 20px}.page-section .section-number{font-size:10px;margin-bottom:22px}.page-section h2,.teaching-panel h2{font-size:40px}.section-grid{gap:16px}.section-heading{padding-bottom:24px}.teaching-panel{padding:0 0 28px}.teaching-art{display:none}}
 
 /* A compact travel journal, keeping each photograph's original proportions. */
+.photo-series-index{display:flex;flex-wrap:wrap;gap:12px 24px;margin-bottom:30px;font-size:12px}.photo-series-index a{padding-bottom:5px;border-bottom:1px solid var(--line);color:var(--blue)}.photo-series-index a:hover{border-color:var(--blue)}.photo-series+.photo-series{margin-top:56px}
 .photo-series-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding-block:24px 28px;border-top:1px solid var(--ink)}
 .photo-series-heading h3{font-family:var(--serif);font-size:28px;font-weight:500;letter-spacing:-.5px;margin:0}
 .photo-series-heading h3 span{color:var(--blue)}
