@@ -5,7 +5,7 @@
   <nav class="photo-series-index" aria-label="Photo journals">{% for series in photo_series %}<a href="#{{ series.name | slugify }}">{{ series.name }}</a>{% endfor %}</nav>
   {% for series in photo_series %}
   <section class="photo-series" id="{{ series.name | slugify }}" aria-labelledby="{{ series.name | slugify }}-title">
-    <div class="photo-series-heading"><h3 id="{{ series.name | slugify }}-title">{{ series.name }}<span>.</span></h3><p>{{ series.items.size }} photographs / A travel journal</p></div>
+    <div class="photo-series-heading"><h3 id="{{ series.name | slugify }}-title" tabindex="-1">{{ series.name }}<span>.</span></h3><p>{{ series.items.size }} photographs / A travel journal</p></div>
     <div class="photo-gallery">{% for photo in series.items %}<figure class="photo-entry"><button class="photo-open" type="button" data-photo-src="{{ photo.image | relative_url }}" data-photo-alt="{{ photo.alt | escape }}" data-photo-caption="{{ series.name | escape }} — {{ photo.caption | escape }}" aria-label="Enlarge photograph: {{ photo.alt | escape }}"><img src="{{ photo.thumbnail | default: photo.image | relative_url }}"{% if photo.width and photo.height %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %} alt="{{ photo.alt | escape }}" loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></button><figcaption><span>0{{ forloop.index }}</span>{{ photo.caption }}</figcaption></figure>{% endfor %}</div>
   </section>
   {% endfor %}

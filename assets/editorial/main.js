@@ -33,6 +33,14 @@
     if (url.origin !== location.origin || url.pathname !== location.pathname ||
         url.search !== location.search || !url.hash || reducedMotion.matches) return;
     const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+    if (target?.classList.contains('photo-series')) {
+      event.preventDefault();
+      if (location.hash !== url.hash) history.pushState(null, '', url.hash);
+      const offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+      window.scrollTo({ top: Math.max(0, target.getBoundingClientRect().top + scrollY - offset), behavior: 'smooth' });
+      target.querySelector('h3')?.focus({ preventScroll: true });
+      return;
+    }
     if (!target?.classList.contains('page-section')) return;
     event.preventDefault();
     closeMenu();
