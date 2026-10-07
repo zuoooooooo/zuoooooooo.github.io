@@ -350,17 +350,19 @@ body.gallery-open{overflow:hidden}
 @media(max-width:800px){.page-section{padding:60px 24px}.page-section h2,.teaching-panel h2{font-size:44px}}
 @media(max-width:620px){.page-section{padding:48px 20px}.page-section .section-number{font-size:10px;margin-bottom:22px}.page-section h2,.teaching-panel h2{font-size:40px}.section-grid{gap:16px}.section-heading{padding-bottom:24px}.teaching-panel{padding:0 0 28px}.teaching-art{display:none}}
 
-/* A compact travel journal, keeping each photograph's original proportions. */
+/* Landscape-led journal spreads, preserving every photograph's proportions. */
 .photo-series-index{display:flex;flex-wrap:wrap;gap:12px 24px;margin-bottom:30px;font-size:12px}.photo-series-index a{padding-bottom:5px;border-bottom:1px solid var(--line);color:var(--blue)}.photo-series-index a:hover{border-color:var(--blue)}.photo-series+.photo-series{margin-top:56px}
 .photo-series-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding-block:24px 28px;border-top:1px solid var(--ink)}
 .photo-series-heading h3{font-family:var(--serif);font-size:28px;font-weight:500;letter-spacing:-.5px;margin:0}
 .photo-series-heading h3 span{color:var(--blue)}
 .photo-series-heading p{font-size:11px;color:var(--muted);margin:0}
-.photo-gallery{columns:3;column-gap:24px}
-.photo-entry{margin-bottom:26px}
+.photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 28px;align-items:end;columns:auto}
+.photo-entry{margin:0;min-width:0}
+.photo-landscape{grid-column:span 2}
+.photo-portrait{width:80%;max-width:220px;justify-self:center}
 .photo-entry figcaption{gap:12px;font-size:10px}
-@media(max-width:800px){.photo-gallery{columns:2;column-gap:20px}}
-@media(max-width:620px){.photo-gallery{columns:1}.photo-series-heading{align-items:flex-start;flex-direction:column;gap:10px;padding-block:22px}.photo-series-heading h3{font-size:26px}.photo-entry figcaption{font-size:11px}}
+@media(max-width:800px){.photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 24px}}
+@media(max-width:620px){.photo-gallery{grid-template-columns:1fr;gap:32px}.photo-landscape{grid-column:auto}.photo-portrait{width:60%;max-width:180px}.photo-series-heading{align-items:flex-start;flex-direction:column;gap:10px;padding-block:22px}.photo-series-heading h3{font-size:26px}.photo-entry figcaption{font-size:11px}}
 
 /* Magazine chapter navigation and a directional paper-turn transition. */
 .chapter-nav{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}
