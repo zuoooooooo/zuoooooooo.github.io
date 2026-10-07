@@ -1,0 +1,14 @@
+- title: Classification under Weak Signals
+  authors: With Dacheng Xiu and Zhouyu Shen
+  status: Work in progress
+  label: Current work
+  links: []
+- title: An Efficient Pruner for Large Language Model with Theoretical Guarantee
+  authors: With Canhong Wen and Wenliang Pan
+  status: International Conference on Machine Learning, 2025
+  label: ICML 2025
+  links:
+    - title: Conference
+      url: https://icml.cc/virtual/2025/poster/44100
+    - title: Paper
+      url: https://openreview.net/pdf?id=nh9mBCYeF7

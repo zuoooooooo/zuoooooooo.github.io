@@ -1,0 +1,31 @@
+<section class="hero wrap" aria-labelledby="hero-title">
+  <div class="hero-topline"><p class="eyebrow"><span class="blue-dot" aria-hidden="true"></span> STATISTICS & DATA SCIENCE</p><p class="small-label">A PERSONAL PERSPECTIVE</p></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-title">Yihong<br>Zuo<span class="accent">.</span><svg class="hero-star" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 0 58 31 82 12 69 40 100 50 69 58 88 82 60 69 50 100 42 69 18 88 31 60 0 50 31 42 12 18 40 31Z" fill="currentColor"/></svg></h1>
+      <p class="hero-deck">Finding structure<br>in <em>complexity.</em></p>
+      <p class="hero-description">Exploring high-dimensional statistics and the theoretical foundations of learning.</p>
+      <div class="hero-actions"><a class="button button-blue" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:{{ site.author.email }}">Say hello <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <figure class="portrait-block">
+      <div class="portrait-frame"><div class="portrait-grid" aria-hidden="true"></div><span class="portrait-note" aria-hidden="true">A LITTLE<br>CURIOUS.</span><img src="{{ '/images/profile.jpg' | relative_url }}" alt="Portrait of Yihong Zuo" width="945" height="945" fetchpriority="high"><svg class="portrait-orbit" viewBox="0 0 400 460" aria-hidden="true"><ellipse cx="195" cy="220" rx="170" ry="202" transform="rotate(24 195 220)"/><ellipse cx="195" cy="220" rx="170" ry="202" transform="rotate(-24 195 220)"/></svg><span class="portrait-caption">YZ / 01</span></div>
+      <figcaption><span>A statistical lens on the world.</span><span aria-hidden="true">↙</span></figcaption>
+    </figure>
+  </div>
+  <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> A little more about me</a>
+</section>
+<div class="interest-strip" aria-label="Research interests"><div class="wrap"><span>HIGH-DIMENSIONAL STATISTICS</span><span class="strip-star" aria-hidden="true">✳</span><span>LEARNING THEORY</span><span class="strip-star" aria-hidden="true">✳</span><span>PRINCIPLED LEARNING METHODS</span></div></div>
+<section class="about-section section-grid wrap" id="about" aria-labelledby="about-title">
+  <div class="section-label"><span class="section-number">01 / ABOUT</span><h2 id="about-title">Driven by<br><em>curiosity.</em></h2>{% if site.data.editorial.cv_pdf %}<a class="text-link" href="{{ site.data.editorial.cv_pdf | relative_url }}">Download CV (PDF) <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  <div class="about-copy prose">{{ content }}<div class="affiliation-line"><span>USTC</span><span aria-hidden="true">→</span><span>WHARTON / UPENN</span></div></div>
+</section>
+<section class="research-section wrap" id="research" aria-labelledby="research-title">
+  <div class="section-heading"><div><span class="section-number">02 / RESEARCH</span><h2 id="research-title">Questions worth<br><em>thinking about.</em></h2></div><p class="section-side-note">Current work &<br>selected publications</p></div>
+  {% include editorial-research.html %}
+</section>
+<section class="teaching-section wrap" id="teaching" aria-labelledby="teaching-title">
+  <div class="teaching-panel"><div><span class="section-number">03 / TEACHING & RESOURCES</span><h2 id="teaching-title">Learning is better<br><em>when shared.</em></h2><p>Course materials, notes, and conversations<br class="desktop-break"> about the ideas behind the mathematics.</p></div><div class="teaching-art" aria-hidden="true"><svg viewBox="0 0 360 360"><g fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="180" cy="180" r="142"/><ellipse cx="180" cy="180" rx="68" ry="142"/><ellipse cx="180" cy="180" rx="68" ry="142" transform="rotate(60 180 180)"/><ellipse cx="180" cy="180" rx="68" ry="142" transform="rotate(120 180 180)"/></g><circle cx="180" cy="38" r="8" fill="currentColor"/></svg><span>Ideas connect.</span></div></div>
+  <div class="teaching-materials"><div class="course-column"><h3 class="small-label">TEACHING ASSISTANT</h3><article class="course-row"><div><h4>Linear Algebra B1</h4><p>USTC · Spring 2025</p><p>Undergraduate course / Junchao Shentu</p></div><a href="https://drive.google.com/file/d/15qaZ2LO9q3pcne5UpCZCqhtsguRtsIIs/view?usp=sharing" aria-label="Linear Algebra B1 assignment answers">Answers ↗</a></article><article class="course-row"><div><h4>Mathematical Analysis B3</h4><p>USTC · Fall 2024</p><p>Undergraduate course / Bin Xu</p></div><a href="https://drive.google.com/file/d/1Wg4-GqymXGt_C5GXHb22CiW_u_9S95NI/view?usp=sharing" aria-label="Mathematical Analysis B3 assignment answers">Answers ↗</a></article></div><div class="resources-column"><h3 class="small-label">NOTES & CONVERSATIONS</h3><a class="resource-row" href="https://drive.google.com/file/d/1jtoXnAF3h3fsnivFV4O36WRF07J86Kbx/view?usp=sharing"><div><h4>Optimization algorithms</h4><p>A collection of notes · PDF</p></div><span aria-hidden="true">↗</span></a><a class="resource-row" href="{{ '/dlseminar.html' | relative_url }}"><div><h4>Deep Learning Seminar</h4><p>Neural networks, LLMs & generative models</p></div><span aria-hidden="true">↗</span></a></div></div>
+</section>
+{% include editorial-photography.html %}
+<section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><span class="section-number">05 / LET’S CONNECT</span><div class="contact-grid"><h2 id="contact-title">Good ideas start<br>with a <em>conversation.</em></h2><a class="contact-arrow" href="mailto:{{ site.author.email }}" aria-label="Email Yihong Zuo">↗</a></div><a class="contact-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a><p>Research questions, interesting ideas, or just a hello.</p></section>

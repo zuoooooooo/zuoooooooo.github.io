@@ -1,5 +1,7 @@
 ---
 permalink: /
+layout: editorial
+editorial_home: true
 title: "About me"
 excerpt: "About me"
 author_profile: true
@@ -13,5 +15,3 @@ I am broadly interested in high-dimensional statistics, theoretical foundations 
 During my undergraduate studies, I had the great pleasure of working with Prof. [Dacheng Xiu](https://dachxiu.chicagobooth.edu/), Prof. [Zhouyu Shen](https://szyu123.github.io/zhouyushen//), Prof. [Weijing Tang](https://sites.google.com/andrew.cmu.edu/weijingtang/home), and Prof. [Canhong Wen](https://bs.ustc.edu.cn/english/profile.php?id=352). 
 
 If you are interested in my research or would like to discuss some interesting topics with me, please feel free to contact me!
-
-[Email](mailto:zuoyihong@mail.ustc.edu.cn):zuoyihong@mail.ustc.edu.cn / [Github](https://github.com/zuoooooooo)
