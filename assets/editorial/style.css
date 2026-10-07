@@ -53,8 +53,6 @@ h2 em{font-weight:500;color:var(--blue)}
 .prose a{border-bottom:1px solid #bbbeb1;transition:color .2s}
 .prose a:hover{color:var(--blue)}
 .about-copy{padding-top:40px}
-.affiliation-line{display:flex;align-items:center;gap:25px;padding-top:22px;margin-top:32px;border-top:1px solid var(--line);font-family:var(--label);font-size:10px;font-weight:800;letter-spacing:1.4px}
-.affiliation-line span:nth-child(2){color:var(--blue);font-size:22px}
 .research-section{padding:65px 0 90px;border-top:1px solid var(--line)}
 .section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:30px}
 .section-heading h2{margin-bottom:0}
@@ -157,7 +155,6 @@ h2 em{font-weight:500;color:var(--blue)}
 .about-section{padding-block:75px}
 .section-grid{grid-template-columns:.75fr 1.25fr;gap:35px}
 .about-copy{padding-top:32px;font-size:14px}
-.affiliation-line{gap:15px;font-size:8px}
 .research-section{padding-top:50px}
 .paper-main h3{font-size:26px}
 .paper-number{font-size:19px}
@@ -207,7 +204,6 @@ h2 em{font-weight:500;color:var(--blue)}
 h2{font-size:44px;letter-spacing:-1.8px}
 .section-label h2{margin-bottom:20px}
 .about-copy{padding-top:0;font-size:15px;line-height:1.9}
-.affiliation-line{font-size:9px;padding-top:18px;margin-top:24px;gap:20px}
 .research-section{padding-block:45px 55px}
 .section-heading{align-items:flex-start;flex-direction:column;gap:14px;margin-bottom:28px}
 .section-heading h2{font-size:44px}
@@ -333,3 +329,23 @@ body.gallery-open{overflow:hidden}
 .scroll-cue{margin-top:42px;padding-bottom:30px}
 @media(max-width:800px){.hero-grid{padding-top:36px}.hero-copy h1{font-size:48px;letter-spacing:-1.5px}.hero-deck{font-size:38px}}
 @media(max-width:620px){.hero-grid{padding-top:28px}.hero-copy h1{font-size:40px;letter-spacing:-1px;margin-bottom:24px}.hero-deck{font-size:34px;letter-spacing:-1px}.hero-description{font-size:14px}.scroll-cue{margin-top:30px}}
+
+/* Clear chapter boundaries, with quiet alternating paper tones. */
+.page-section{width:100%;margin-inline:0;padding:72px max(56px,calc((100% - 1200px)/2));border-top:1px solid #a8ab9c}
+.page-section .section-number{display:inline-block;color:var(--blue);font-size:11px;letter-spacing:1.8px;border-bottom:2px solid var(--blue);padding-bottom:8px;margin-bottom:26px}
+.page-section h2{font-size:clamp(42px,4.6vw,62px)}
+.page-section h2 em{font-style:normal}
+.about-copy{padding-top:0}
+.prose p:last-child{margin-bottom:0}
+.research-section,.photography-section{background:#ecece3}
+.section-heading{padding-bottom:28px;margin-bottom:0}
+.research-list{border-top:1px solid var(--ink)}
+.research-item:last-child{border-bottom:0}
+.teaching-panel{padding:0 0 36px;background:transparent;border-bottom:1px solid var(--line)}
+.teaching-panel h2{font-size:clamp(42px,4.6vw,62px)}
+.photo-coming{background:var(--paper);border:1px solid var(--line)}
+.contact-section{background:#e5e8de}
+.site-nav a[aria-current]{border-bottom:2px solid var(--blue);padding-block:8px}
+@media(max-width:1100px){.page-section{padding-inline:40px}}
+@media(max-width:800px){.page-section{padding:60px 24px}.page-section h2,.teaching-panel h2{font-size:44px}}
+@media(max-width:620px){.page-section{padding:48px 20px}.page-section .section-number{font-size:10px;margin-bottom:22px}.page-section h2,.teaching-panel h2{font-size:40px}.section-grid{gap:16px}.section-heading{padding-bottom:24px}.teaching-panel{padding:0 0 28px}.teaching-art{display:none}}
