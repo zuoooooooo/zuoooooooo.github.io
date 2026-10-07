@@ -350,19 +350,38 @@ body.gallery-open{overflow:hidden}
 @media(max-width:800px){.page-section{padding:60px 24px}.page-section h2,.teaching-panel h2{font-size:44px}}
 @media(max-width:620px){.page-section{padding:48px 20px}.page-section .section-number{font-size:10px;margin-bottom:22px}.page-section h2,.teaching-panel h2{font-size:40px}.section-grid{gap:16px}.section-heading{padding-bottom:24px}.teaching-panel{padding:0 0 28px}.teaching-art{display:none}}
 
-/* Landscape-led journal spreads, preserving every photograph's proportions. */
-.photo-series-index{display:flex;flex-wrap:wrap;gap:12px 24px;margin-bottom:30px;font-size:12px}.photo-series-index a{padding-bottom:5px;border-bottom:1px solid var(--line);color:var(--blue)}.photo-series-index a:hover{border-color:var(--blue)}.photo-series+.photo-series{margin-top:56px}
-.photo-series-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding-block:24px 28px;border-top:1px solid var(--ink)}
-.photo-series-heading h3{font-family:var(--serif);font-size:28px;font-weight:500;letter-spacing:-.5px;margin:0}
+/* Curated photo essays with offset images and quiet captions. */
+.photo-series-index{display:flex;flex-wrap:wrap;gap:12px 28px;margin-bottom:42px;font-size:12px}
+.photo-series-index a{padding-bottom:5px;border-bottom:1px solid var(--line);color:var(--blue)}
+.photo-series-index a:hover{border-color:var(--blue)}
+.photo-series+.photo-series{margin-top:100px}
+.photo-series-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-block:28px 38px;border-top:1px solid var(--ink)}
+.photo-journal-number{display:block;font-family:var(--label);font-size:9px;letter-spacing:1.8px;color:var(--muted);margin-bottom:14px}
+.photo-series-heading h3{font-family:var(--serif);font-size:clamp(30px,3.5vw,44px);font-weight:500;letter-spacing:-1px;margin:0;line-height:1.15}
 .photo-series-heading h3 span{color:var(--blue)}
-.photo-series-heading p{font-size:11px;color:var(--muted);margin:0}
-.photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 28px;align-items:end;columns:auto}
-.photo-entry{margin:0;min-width:0}
-.photo-landscape{grid-column:span 2}
-.photo-portrait{width:80%;max-width:220px;justify-self:center}
-.photo-entry figcaption{gap:12px;font-size:10px}
-@media(max-width:800px){.photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 24px}}
-@media(max-width:620px){.photo-gallery{grid-template-columns:1fr;gap:32px}.photo-landscape{grid-column:auto}.photo-portrait{width:60%;max-width:180px}.photo-series-heading{align-items:flex-start;flex-direction:column;gap:10px;padding-block:22px}.photo-series-heading h3{font-size:26px}.photo-entry figcaption{font-size:11px}}
+.photo-series-heading p{font-size:10px;color:var(--muted);margin:0 0 4px}
+.photo-gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:64px 22px;align-items:start;columns:auto}
+.photo-entry{margin:0;min-width:0;width:100%;max-width:none;justify-self:stretch}
+.photo-portrait{max-width:220px}
+.photo-composition-opening{grid-column:1 / span 8;grid-row:1}
+.photo-composition-aside-right{grid-column:10 / span 3;grid-row:1;margin-top:110px;justify-self:end}
+.photo-composition-wide-right{grid-column:4 / span 9;grid-row:2}
+.photo-composition-aside-left{grid-column:1 / span 2;grid-row:2;align-self:center}
+.photo-composition-wide-left{grid-column:1 / span 8;grid-row:3}
+.photo-composition-portrait-right{grid-column:10 / span 3;grid-row:3;margin-top:70px}
+.photo-composition-closing{grid-column:4 / span 9;grid-row:4}
+.photo-composition-portrait-left{grid-column:1 / span 2;grid-row:4;align-self:center}
+.photo-composition-vignette-left{grid-column:2 / span 3;grid-row:2;margin-top:8px}
+.photo-composition-vignette-center{grid-column:6 / span 3;grid-row:2;margin-top:85px}
+.photo-composition-vignette-right{grid-column:10 / span 3;grid-row:2;margin-top:170px}
+.photo-entry figcaption{gap:10px;font-size:11px;line-height:1.65;padding-top:11px}
+.photo-entry figcaption>span{font-family:var(--label);font-size:8px;letter-spacing:1px;color:var(--muted);padding-top:2px}
+.photo-expand{right:10px;bottom:10px;width:26px;height:26px;font-size:16px;opacity:0;transition:opacity .2s,transform .2s}
+.photo-open:hover .photo-expand,.photo-open:focus-visible .photo-expand{opacity:1}
+@media(hover:none){.photo-expand{opacity:1}}
+@media(max-width:1000px){.photo-gallery{gap:48px 16px}.photo-composition-aside-right{margin-top:65px}.photo-composition-portrait-right{margin-top:40px}}
+@media(max-width:800px){.photo-gallery{grid-template-columns:repeat(6,minmax(0,1fr));gap:38px 16px}.photo-entry{grid-row:auto;margin-top:0;align-self:start}.photo-landscape{grid-column:1 / -1}.photo-portrait{grid-column:span 3;max-width:190px;justify-self:center}.photo-portrait:nth-child(even){margin-top:28px}.photo-series+.photo-series{margin-top:72px}.photo-series-heading{padding-bottom:28px}}
+@media(max-width:620px){.photo-gallery{grid-template-columns:1fr;gap:34px}.photo-entry{grid-column:1;grid-row:auto}.photo-portrait{width:58%;max-width:180px;justify-self:start;margin-left:8%;margin-top:0!important}.photo-portrait:nth-child(even){justify-self:end;margin-left:0;margin-right:8%}.photo-series-heading{align-items:flex-start;flex-direction:column;gap:14px;padding-block:24px}.photo-series-heading h3{font-size:30px}.photo-journal-number{font-size:8px;margin-bottom:10px}.photo-entry figcaption{font-size:10px}.photo-series-index{margin-bottom:28px}.photo-series+.photo-series{margin-top:60px}}
 
 /* Magazine chapter navigation and a directional paper-turn transition. */
 .chapter-nav{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}

@@ -1,5 +1,6 @@
 # Travel photo journals. Web copies preserve the supplied compositions.
 - series: "Edinburgh & London"
+  composition: opening
   image: /assets/photography/uk/dsc00792.jpg
   thumbnail: /assets/photography/uk/dsc00792-thumb.jpg
   alt: "A city skyline with a clock tower and spires in warm afternoon light."
@@ -7,6 +8,7 @@
   width: 900
   height: 600
 - series: "Edinburgh & London"
+  composition: aside-right
   image: /assets/photography/uk/dsc00754.jpg
   thumbnail: /assets/photography/uk/dsc00754-thumb.jpg
   alt: "People standing between tall stone columns against a clear blue sky."
@@ -14,6 +16,7 @@
   width: 599
   height: 900
 - series: "Edinburgh & London"
+  composition: wide-right
   image: /assets/photography/uk/dsc00636.jpg
   thumbnail: /assets/photography/uk/dsc00636-thumb.jpg
   alt: "White chalk cliffs beside the sea, with a house in the foreground."
@@ -21,6 +24,7 @@
   width: 900
   height: 600
 - series: "Edinburgh & London"
+  composition: aside-left
   image: /assets/photography/uk/dsc00702.jpg
   thumbnail: /assets/photography/uk/dsc00702-thumb.jpg
   alt: "A gull flying above a red-and-white lighthouse surrounded by blue water."
@@ -28,6 +32,7 @@
   width: 600
   height: 900
 - series: "Edinburgh & London"
+  composition: wide-left
   image: /assets/photography/uk/dsc00418.jpg
   thumbnail: /assets/photography/uk/dsc00418-thumb.jpg
   alt: "Pink blossoms framing a stone cathedral dome beneath a blue sky."
@@ -35,6 +40,7 @@
   width: 900
   height: 600
 - series: "Edinburgh & London"
+  composition: portrait-right
   image: /assets/photography/uk/dsc00315.jpg
   thumbnail: /assets/photography/uk/dsc00315-thumb.jpg
   alt: "A dark statue in the foreground of an ornate clock tower beneath a cloudy sky."
@@ -42,6 +48,7 @@
   width: 600
   height: 900
 - series: "Edinburgh & London"
+  composition: closing
   image: /assets/photography/uk/dsc00280.jpg
   thumbnail: /assets/photography/uk/dsc00280-thumb.jpg
   alt: "A grand riverside building with a green tower under scattered clouds."
@@ -49,6 +56,7 @@
   width: 900
   height: 600
 - series: "Edinburgh & London"
+  composition: portrait-left
   image: /assets/photography/uk/dsc00675.jpg
   thumbnail: /assets/photography/uk/dsc00675-thumb.jpg
   alt: "Walkers following paths along white cliffs with a red-and-white lighthouse offshore."
@@ -56,27 +64,7 @@
   width: 600
   height: 900
 - series: Penang
-  image: /assets/photography/penang/street-mural.jpg
-  thumbnail: /assets/photography/penang/street-mural-thumb.jpg
-  alt: "A motorcycle parked beside a red wooden door and a mural on a weathered brick wall."
-  caption: "Walls & stories"
-  width: 600
-  height: 900
-- series: Penang
-  image: /assets/photography/penang/rooftops.jpg
-  thumbnail: /assets/photography/penang/rooftops-thumb.jpg
-  alt: "Red rooftops and white buildings overlooking the water beneath a hazy sky."
-  caption: "Rooftops in the haze"
-  width: 675
-  height: 900
-- series: Penang
-  image: /assets/photography/penang/still-life.jpg
-  thumbnail: /assets/photography/penang/still-life-thumb.jpg
-  alt: "Porcelain figures and decorative grapes on a floral plate lit by sunlight from a window."
-  caption: "Afternoon light"
-  width: 675
-  height: 900
-- series: Penang
+  composition: opening
   image: /assets/photography/penang/street-procession.jpg
   thumbnail: /assets/photography/penang/street-procession-thumb.jpg
   alt: "A crowd surrounding a decorated silver carriage with garlands on a tree-lined street."
@@ -84,6 +72,31 @@
   width: 900
   height: 675
 - series: Penang
+  composition: aside-right
+  image: /assets/photography/penang/street-mural.jpg
+  thumbnail: /assets/photography/penang/street-mural-thumb.jpg
+  alt: "A motorcycle parked beside a red wooden door and a mural on a weathered brick wall."
+  caption: "Walls & stories"
+  width: 600
+  height: 900
+- series: Penang
+  composition: vignette-left
+  image: /assets/photography/penang/rooftops.jpg
+  thumbnail: /assets/photography/penang/rooftops-thumb.jpg
+  alt: "Red rooftops and white buildings overlooking the water beneath a hazy sky."
+  caption: "Rooftops in the haze"
+  width: 675
+  height: 900
+- series: Penang
+  composition: vignette-center
+  image: /assets/photography/penang/still-life.jpg
+  thumbnail: /assets/photography/penang/still-life-thumb.jpg
+  alt: "Porcelain figures and decorative grapes on a floral plate lit by sunlight from a window."
+  caption: "Afternoon light"
+  width: 675
+  height: 900
+- series: Penang
+  composition: vignette-right
   image: /assets/photography/penang/rainbow-mural.jpg
   thumbnail: /assets/photography/penang/rainbow-mural-thumb.jpg
   alt: "A mural of a person beneath a painted rainbow above clothing racks on a worn wall."
