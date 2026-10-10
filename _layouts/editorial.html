@@ -38,7 +38,7 @@
       <a href="{{ '/' | relative_url }}#research">Research</a>
       <a href="{{ '/' | relative_url }}#teaching">Teaching</a>
       <a href="{{ '/' | relative_url }}#photography">Travel &amp; Photography</a>
-      {% if site.data.editorial.cv_pdf %}<a class="nav-cv" href="{{ site.data.editorial.cv_pdf | relative_url }}">CV (PDF) <span aria-hidden="true">↗</span></a>{% else %}<span class="nav-cv cv-pending" title="A new PDF CV will be added soon">CV (PDF) · soon</span>{% endif %}
+      {% if site.data.editorial.cv_pdf %}<a class="nav-cv" href="{{ site.data.editorial.cv_pdf | relative_url }}">CV (PDF) <span aria-hidden="true">{% include editorial-arrow.html %}</span></a>{% else %}<span class="nav-cv cv-pending" title="A new PDF CV will be added soon">CV (PDF) · soon</span>{% endif %}
     </nav>
     <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
       <svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 15.5A8.5 8.5 0 0 1 8.5 4a8.5 8.5 0 1 0 11.5 11.5Z"/></svg>
@@ -54,7 +54,7 @@
   <footer class="site-footer wrap">
     <a class="wordmark" href="{{ '/' | relative_url }}">YZ<span>.</span></a>
     <p>Statistics. Learning. Curiosity.</p>
-    <div class="footer-links"><a href="https://github.com/{{ site.author.github }}">GitHub ↗</a><a href="{{ site.author.googlescholar }}">Scholar ↗</a><a href="mailto:{{ site.author.email }}">Email ↗</a></div>
+    <div class="footer-links"><a href="https://github.com/{{ site.author.github }}">GitHub {% include editorial-arrow.html %}</a><a href="{{ site.author.googlescholar }}">Scholar {% include editorial-arrow.html %}</a><a href="mailto:{{ site.author.email }}">Email {% include editorial-arrow.html %}</a></div>
     <span class="copyright">© {{ site.time | date: '%Y' }} Yihong Zuo</span>
   </footer>
   {% include analytics.html %}
