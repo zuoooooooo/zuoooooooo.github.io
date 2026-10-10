@@ -1,0 +1,17 @@
+<section class="photography-section page-section wrap" id="photography" aria-labelledby="photography-title">
+  <div class="section-heading"><div><span class="section-number">04 / OFF THE PAGE</span><h2 id="photography-title" tabindex="-1">Travel and<br><em>photography.</em></h2></div><p class="photo-intro">Away from statistics,<br>I enjoy travel and photography.</p></div>
+  {% if site.data.photography.size > 0 %}
+  {% assign photo_series = site.data.photography | group_by: 'series' %}
+  <nav class="photo-series-index" aria-label="Photo journals">{% for series in photo_series %}<a href="#{{ series.name | slugify }}">{{ series.name }}</a>{% endfor %}</nav>
+  {% for series in photo_series %}
+  <section class="photo-series" id="{{ series.name | slugify }}" aria-labelledby="{{ series.name | slugify }}-title">
+    <div class="photo-series-heading"><div><span class="photo-journal-number">JOURNAL / 0{{ forloop.index }}</span><h3 id="{{ series.name | slugify }}-title" tabindex="-1">{{ series.name }}<span>.</span></h3></div><p>{{ series.items.size }} photographs / A travel journal</p></div>
+    <div class="photo-gallery">{% for photo in series.items %}<figure class="photo-entry {% if photo.width > photo.height %}photo-landscape{% else %}photo-portrait{% endif %}" style="--photo-ratio:{{ photo.width | times: 1.0 | divided_by: photo.height }}"><button class="photo-open" type="button" data-photo-src="{{ photo.image | relative_url }}" data-photo-alt="{{ photo.alt | escape }}" data-photo-caption="{{ series.name | escape }}" aria-label="Enlarge photograph: {{ photo.alt | escape }}"><img src="{{ photo.thumbnail | default: photo.image | relative_url }}"{% if photo.width > photo.height and photo.thumbnail %} srcset="{{ photo.thumbnail | relative_url }} 900w, {{ photo.image | relative_url }} 1800w" sizes="(max-width: 620px) 65vw, 450px"{% endif %}{% if photo.width and photo.height %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %} alt="{{ photo.alt | escape }}" loading="lazy" decoding="async"><span class="photo-expand" aria-hidden="true">↗</span></button></figure>{% endfor %}</div>
+  </section>
+  {% endfor %}
+  <dialog class="photo-lightbox" aria-label="Photography viewer"><button class="photo-close" type="button" aria-label="Close photograph">Close ×</button><figure><img class="lightbox-image" alt=""><figcaption class="lightbox-caption"></figcaption></figure><div class="lightbox-controls"><button class="photo-prev" type="button" aria-label="Previous photograph">←</button><span class="photo-counter" aria-live="polite"></span><button class="photo-next" type="button" aria-label="Next photograph">→</button></div></dialog>
+  {% else %}
+  <div class="photo-coming"><div class="viewfinder" aria-hidden="true"><span></span><span></span><span></span><span></span><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="28"/><circle cx="50" cy="50" r="14"/><path d="M50 12v12m0 52v12M12 50h12m52 0h12"/></svg></div><div><span class="small-label">PHOTO JOURNAL</span><p>New perspectives,<br><em>coming soon.</em></p></div><span class="photo-edition">A SPACE FOR<br>THE EVERYDAY.</span></div>
+  {% endif %}
+  {% include editorial-chapter-nav.html previous="teaching" previous_title="Teaching" next="contact" next_title="Contact" %}
+</section>

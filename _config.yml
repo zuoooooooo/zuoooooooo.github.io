@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Yihong Zuo"
   avatar           : "profile.jpg"
-  bio              : "Junior Student at USTC"
+  bio              : "PhD Student at Wharton"
   location         : "Hefei,Anhui"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=BZhVTmcAAAAJ&hl=en"
-  email            : "zuoyihong@mail.ustc.edu.cn"
+  email            : "yhzuo@wharton.upenn.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
