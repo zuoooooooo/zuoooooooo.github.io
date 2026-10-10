@@ -1,4 +1,28 @@
 (() => {
+  const root = document.documentElement;
+  const themeToggle = document.querySelector('.theme-toggle');
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+  let manualTheme = false;
+  try { manualTheme = ['light', 'dark'].includes(localStorage.getItem('yhzuo-theme')); } catch {}
+  const applyTheme = (theme) => {
+    root.dataset.theme = theme;
+    const dark = theme === 'dark';
+    const label = dark ? 'Switch to light mode' : 'Switch to dark mode';
+    themeToggle?.setAttribute('aria-label', label);
+    themeToggle?.setAttribute('title', label);
+    themeToggle?.setAttribute('aria-pressed', String(dark));
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#1b1e1a' : '#f5f2e9');
+  };
+  applyTheme(root.dataset.theme || (systemTheme.matches ? 'dark' : 'light'));
+  themeToggle?.addEventListener('click', () => {
+    const theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    manualTheme = true;
+    applyTheme(theme);
+    try { localStorage.setItem('yhzuo-theme', theme); } catch {}
+  });
+  systemTheme.addEventListener('change', (event) => {
+    if (!manualTheme) applyTheme(event.matches ? 'dark' : 'light');
+  });
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
   const closeMenu = () => {
@@ -21,7 +45,6 @@
   });
   // A short crossfade connects chapters; masked titles lead the arrival.
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const root = document.documentElement;
   const main = document.querySelector('main');
   const navigationAnimations = new Set();
   let navigationVersion = 0;
@@ -136,6 +159,38 @@
   const photos = Array.from(document.querySelectorAll('.photo-open'));
   const lightbox = document.querySelector('.photo-lightbox');
   if (lightbox && typeof lightbox.showModal === 'function') {
+    const viewer = lightbox.querySelector('.lightbox-content');
+    const fullscreenButton = lightbox.querySelector('.photo-fullscreen');
+    const isFullscreen = () => document.fullscreenElement === viewer || lightbox.classList.contains('is-expanded');
+    const updateFullscreenButton = () => {
+      const active = isFullscreen();
+      const label = active ? 'Exit fullscreen' : 'Fullscreen';
+      fullscreenButton.querySelector('span').textContent = label;
+      fullscreenButton.setAttribute('aria-label', active ? 'Exit fullscreen' : 'View photograph fullscreen');
+      fullscreenButton.setAttribute('aria-pressed', String(active));
+    };
+    const exitFullscreen = async () => {
+      lightbox.classList.remove('is-expanded');
+      if (document.fullscreenElement === viewer) {
+        try { await document.exitFullscreen(); } catch {}
+      }
+      updateFullscreenButton();
+    };
+    fullscreenButton.addEventListener('click', async () => {
+      if (isFullscreen()) { await exitFullscreen(); return; }
+      try {
+        if (!document.fullscreenEnabled || !viewer.requestFullscreen) throw new Error('Fullscreen unavailable');
+        await viewer.requestFullscreen();
+      } catch {
+        // Browsers without native fullscreen still offer an edge-to-edge viewer.
+        if (lightbox.open) lightbox.classList.add('is-expanded');
+      }
+      updateFullscreenButton();
+    });
+    document.addEventListener('fullscreenchange', updateFullscreenButton);
+    lightbox.addEventListener('cancel', (event) => {
+      if (isFullscreen()) { event.preventDefault(); exitFullscreen(); }
+    });
     let currentPhoto = 0;
     const showPhoto = (index) => {
       currentPhoto = (index + photos.length) % photos.length;
@@ -161,6 +216,7 @@
       }
     });
     lightbox.addEventListener('close', () => {
+      exitFullscreen();
       document.body.classList.remove('gallery-open');
       photos[currentPhoto].focus();
     });
