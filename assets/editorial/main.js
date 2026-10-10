@@ -43,6 +43,36 @@
       toggle.focus();
     }
   });
+  const sectionLinks = Array.from(document.querySelectorAll('.site-nav a[href*="#"]'));
+  const pageSections = Array.from(document.querySelectorAll('main .page-section'));
+  const setActiveSection = (id) => {
+    sectionLinks.forEach((link) => {
+      if (link.hash === `#${id}`) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+  };
+  let sectionFrame = 0;
+  // Use one line below the sticky header, rather than a partial observer batch.
+  const syncActiveSection = () => {
+    sectionFrame = 0;
+    if (root.dataset.sectionTransition) return;
+    const activationLine = (parseFloat(getComputedStyle(root).scrollPaddingTop) || 0) + 2;
+    let active = pageSections[0];
+    for (const section of pageSections) {
+      if (section.getBoundingClientRect().top > activationLine) break;
+      active = section;
+    }
+    setActiveSection(active?.id);
+  };
+  const scheduleActiveSection = () => {
+    if (!sectionFrame) sectionFrame = requestAnimationFrame(syncActiveSection);
+  };
+  window.addEventListener('scroll', scheduleActiveSection, { passive: true });
+  window.addEventListener('resize', scheduleActiveSection);
+  window.addEventListener('hashchange', scheduleActiveSection);
+  window.addEventListener('load', scheduleActiveSection);
+  document.fonts?.ready.then(scheduleActiveSection);
+  syncActiveSection();
   // A short crossfade connects chapters; masked titles lead the arrival.
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const main = document.querySelector('main');
@@ -53,6 +83,7 @@
     navigationAnimations.forEach((animation) => animation.cancel());
     navigationAnimations.clear();
     delete root.dataset.sectionTransition;
+    scheduleActiveSection();
   };
   const playNavigation = (element, frames, options) => {
     const animation = element.animate(frames, options);
@@ -82,6 +113,7 @@
     event.preventDefault();
     cancelNavigation();
     closeMenu();
+    setActiveSection(target.closest('.page-section')?.id);
     const version = navigationVersion;
     const heading = target.querySelector('h2, h3');
     const offset = parseFloat(getComputedStyle(root).scrollPaddingTop) || 0;
@@ -137,25 +169,11 @@
         navigationAnimations.forEach((animation) => animation.cancel());
         navigationAnimations.clear();
         delete root.dataset.sectionTransition;
+        syncActiveSection();
         heading?.focus({ preventScroll: true });
       }
     }
   });
-  const sectionLinks = Array.from(document.querySelectorAll('.site-nav a[href*="#"]'));
-  if ('IntersectionObserver' in window) {
-    const sectionObserver = new IntersectionObserver((entries) => {
-      const visible = entries.find((entry) => entry.isIntersecting);
-      if (!visible) return;
-      sectionLinks.forEach((link) => {
-        if (link.hash === `#${visible.target.id}`) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    }, { rootMargin: '-105px 0px -55% 0px', threshold: 0 });
-    sectionLinks.forEach((link) => {
-      const section = document.querySelector(link.hash);
-      if (section) sectionObserver.observe(section);
-    });
-  }
   const photos = Array.from(document.querySelectorAll('.photo-open'));
   const lightbox = document.querySelector('.photo-lightbox');
   if (lightbox && typeof lightbox.showModal === 'function') {
