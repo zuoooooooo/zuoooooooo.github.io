@@ -387,3 +387,26 @@ body.gallery-open{overflow:hidden}
 @media(max-width:620px){.about-section{row-gap:16px}}
 
 html[data-section-transition]{scroll-behavior:auto!important}
+
+/* Wide displays share a fluid canvas, while prose keeps a readable measure. */
+@media(min-width:1440px){
+  :root{--wide-content:1920px;--wide-gutter:clamp(56px,5vw,160px)}
+  .wrap{width:min(var(--wide-content),calc(100% - 2*var(--wide-gutter)))}
+  .page-section{width:100%;padding-inline:max(var(--wide-gutter),calc((100% - var(--wide-content))/2))}
+  .site-nav{font-size:14px;gap:36px}
+  .wordmark{font-size:28px}
+  .section-grid{grid-template-columns:.85fr 1.15fr;column-gap:80px}
+  .about-copy{max-width:720px;font-size:18px}
+  .paper-main h3{max-width:1050px;font-size:34px}
+  .paper-authors{font-size:14px}
+  .paper-status,.paper-links{font-size:13px}
+  .section-side-note,.photo-intro{font-size:14px}
+  .teaching-materials{gap:80px}
+  .teaching-materials h4{font-size:27px}
+  .teaching-materials p,.course-row>a{font-size:13px}
+  .photo-gallery{gap:26px 24px}
+  .photo-entry{flex-basis:calc(var(--photo-ratio)*clamp(260px,18vw,400px));max-width:none}
+  .photo-series-heading h3{font-size:44px}
+  .photo-series-heading p,.photo-series-index{font-size:12px}
+  .photo-lightbox{width:min(1440px,90vw)}
+}
