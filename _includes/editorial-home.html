@@ -3,12 +3,9 @@
   <div class="hero-grid">
     <div class="hero-copy">
       <h1 id="hero-title">Yihong Zuo<span class="accent">.</span></h1>
-      <div class="hero-actions"><a class="button button-blue" href="#research">Explore my research <span aria-hidden="true">{% include editorial-arrow.html %}</span></a><a class="text-link" href="mailto:{{ site.author.email }}">Say hello <span aria-hidden="true">{% include editorial-arrow.html %}</span></a></div>
     </div>
   </div>
-  <a class="scroll-cue" href="#about"><span aria-hidden="true">↓</span> A little more about me</a>
 </section>
-<div class="interest-strip" aria-label="Research interests"><div class="wrap"><span>LEARNING THEORY</span><span class="strip-separator" aria-hidden="true">/</span><span>LLM POST-TRAINING</span><span class="strip-separator" aria-hidden="true">/</span><span>HIGH-DIMENSIONAL STATISTICS</span></div></div>
 <section class="about-section section-grid page-section wrap" id="about" aria-labelledby="about-title">
   <div class="section-label"><span class="section-number">01 / BACKGROUND</span><h2 id="about-title" tabindex="-1">About <em>me.</em></h2>{% if site.data.editorial.cv_pdf %}<a class="text-link" href="{{ site.data.editorial.cv_pdf | relative_url }}">Download CV (PDF) <span aria-hidden="true">{% include editorial-arrow.html %}</span></a>{% endif %}</div>
   <div class="about-copy prose">{{ content }}</div>

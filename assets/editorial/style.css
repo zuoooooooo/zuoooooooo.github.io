@@ -325,12 +325,12 @@ body.gallery-open{overflow:hidden}
 
 /* A quieter, text-led opening with a modest name and no portrait. */
 .hero-grid{display:block;max-width:860px;padding-top:48px}
-.hero-copy h1{font-size:56px;line-height:1.2;letter-spacing:-2px;margin-bottom:26px}
+.hero-copy h1{font-size:56px;line-height:1.2;letter-spacing:-2px;margin-bottom:0}
 .hero-deck{font-size:44px;line-height:1.25;letter-spacing:-1.5px;margin-bottom:24px}
 .hero-description{max-width:520px;font-size:16px;line-height:1.8;margin-bottom:28px}
 .scroll-cue{margin-top:42px;padding-bottom:30px}
 @media(max-width:800px){.hero-grid{padding-top:36px}.hero-copy h1{font-size:48px;letter-spacing:-1.5px}.hero-deck{font-size:38px}}
-@media(max-width:620px){.hero-grid{padding-top:28px}.hero-copy h1{font-size:40px;letter-spacing:-1px;margin-bottom:24px}.hero-deck{font-size:34px;letter-spacing:-1px}.hero-description{font-size:14px}.scroll-cue{margin-top:30px}}
+@media(max-width:620px){.hero-grid{padding-top:28px}.hero-copy h1{font-size:40px;letter-spacing:-1px;margin-bottom:0}.hero-deck{font-size:34px;letter-spacing:-1px}.hero-description{font-size:14px}.scroll-cue{margin-top:30px}}
 
 /* Clear chapter boundaries, with quiet alternating paper tones. */
 .page-section{width:100%;margin-inline:0;padding:72px max(56px,calc((100% - 1200px)/2));border-top:1px solid var(--boundary)}
@@ -385,8 +385,9 @@ body.gallery-open{overflow:hidden}
 .page-section h2:focus-visible{outline:1px solid var(--blue);outline-offset:8px}
 @media(max-width:620px){.chapter-nav{gap:18px;margin-top:30px;padding-top:20px}.chapter-link{font-size:17px;gap:10px}.chapter-link small{font-size:8px;letter-spacing:.7px}.chapter-arrow{width:34px;height:34px;font-size:17px}}
 
-.about-section{row-gap:0}
-@media(max-width:620px){.about-section{row-gap:16px}}
+.about-section{row-gap:0;border-top:0;padding-top:48px}
+@media(max-width:800px){.hero-copy h1{margin-bottom:0}}
+@media(max-width:620px){.about-section{row-gap:16px;padding-top:32px}}
 
 html[data-section-transition]{scroll-behavior:auto!important}
 
